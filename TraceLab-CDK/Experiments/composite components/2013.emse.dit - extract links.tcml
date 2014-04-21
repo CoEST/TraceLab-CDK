@@ -1,0 +1,669 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CompositeComponentMetadataDefinition xmlVersion="2">
+  <Info>
+    <ID>ea757e3b-38a4-418a-88f4-bb3e3739f1a0</ID>
+    <Version>1.0.0.0</Version>
+    <Label>2013.EMSE.Dit - Extract links</Label>
+    <Name>2013.EMSE.Dit - Extract links</Name>
+    <Author>SEMERU; Evan Moritz</Author>
+    <Description />
+  </Info>
+  <Input>
+    <IOItemDefinition Name="LSI_Dyn_loop" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+    <IOItemDefinition Name="PR_loopBot10" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+    <IOItemDefinition Name="PR_loopBot20" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+    <IOItemDefinition Name="PR_loopBot30" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+    <IOItemDefinition Name="PR_loopBot40" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+    <IOItemDefinition Name="PR_loopBot50" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+    <IOItemDefinition Name="PR_loopBot60" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+    <IOItemDefinition Name="PR_loopBot70" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+    <IOItemDefinition Name="PR_loopBot80" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+    <IOItemDefinition Name="PR_loopBot90" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+    <IOItemDefinition Name="PR_loopTop10" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+    <IOItemDefinition Name="PR_loopTop20" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+    <IOItemDefinition Name="PR_loopTop30" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+    <IOItemDefinition Name="PR_loopTop40" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+    <IOItemDefinition Name="PR_loopTop50" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+    <IOItemDefinition Name="PR_loopTop60" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+    <IOItemDefinition Name="PR_loopTop70" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+    <IOItemDefinition Name="PR_loopTop80" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+    <IOItemDefinition Name="PR_loopTop90" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+  </Input>
+  <Output>
+    <IOItemDefinition Name="Bot 80" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+    <IOItemDefinition Name="Bot 90" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+    <IOItemDefinition Name="Bot10" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+    <IOItemDefinition Name="Bot20" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+    <IOItemDefinition Name="Bot30" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+    <IOItemDefinition Name="Bot40" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+    <IOItemDefinition Name="Bot50" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+    <IOItemDefinition Name="Bot60" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+    <IOItemDefinition Name="Bot70" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+    <IOItemDefinition Name="Top10" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+    <IOItemDefinition Name="Top20" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+    <IOItemDefinition Name="Top30" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+    <IOItemDefinition Name="Top40" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+    <IOItemDefinition Name="Top50" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+    <IOItemDefinition Name="Top60" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+    <IOItemDefinition Name="Top70" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+    <IOItemDefinition Name="Top80" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+    <IOItemDefinition Name="Top90" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+  </Output>
+  <ConfigDefinition>
+    <IsJava>False</IsJava>
+    <ConfigProperties />
+  </ConfigDefinition>
+  <ComponentGraph>
+    <graph>
+      <References />
+      <ExperimentInfo>
+        <Version>2</Version>
+        <Id>6a1a3167-57e1-48da-b0c3-5f4996d66195</Id>
+      </ExperimentInfo>
+      <node id="eac921c8-54ef-4f3c-b956-ba516c599b5d">
+        <SerializedVertexData Version="1" X="79" Y="250">
+          <Metadata type="TraceLab.Core.Components.ComponentMetadata, TraceLab.Core, Culture=neutral, PublicKeyToken=2c83cea59a8bb151" Label="Extract Top 10" ComponentMetadataDefinitionID="247872ca-9a01-5bf6-a25f-e2f5e2001823" WaitsForAllPredecessors="True">
+            <IOSpec Version="2">
+              <Input>
+                <IOItem>
+                  <IOItemDefinition Name="TargetMatrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>PR_loopTop10</MappedTo>
+                </IOItem>
+                <IOItem>
+                  <IOItemDefinition Name="OriginalMatrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>LSI_Dyn_loop</MappedTo>
+                </IOItem>
+              </Input>
+              <Output>
+                <IOItem>
+                  <IOItemDefinition Name="ExtractedLinks" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+                  <MappedTo>Top10</MappedTo>
+                </IOItem>
+              </Output>
+            </IOSpec>
+            <ConfigWrapper Version="1" IsJava="False">
+              <ConfigValues />
+            </ConfigWrapper>
+          </Metadata>
+        </SerializedVertexData>
+      </node>
+      <node id="a53c2219-1ddf-4a32-87d5-85d0ba34838f">
+        <SerializedVertexData Version="1" X="80" Y="319">
+          <Metadata type="TraceLab.Core.Components.ComponentMetadata, TraceLab.Core, Culture=neutral, PublicKeyToken=2c83cea59a8bb151" Label="Extract Top 30" ComponentMetadataDefinitionID="247872ca-9a01-5bf6-a25f-e2f5e2001823" WaitsForAllPredecessors="True">
+            <IOSpec Version="2">
+              <Input>
+                <IOItem>
+                  <IOItemDefinition Name="TargetMatrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>PR_loopTop30</MappedTo>
+                </IOItem>
+                <IOItem>
+                  <IOItemDefinition Name="OriginalMatrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>LSI_Dyn_loop</MappedTo>
+                </IOItem>
+              </Input>
+              <Output>
+                <IOItem>
+                  <IOItemDefinition Name="ExtractedLinks" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+                  <MappedTo>Top30</MappedTo>
+                </IOItem>
+              </Output>
+            </IOSpec>
+            <ConfigWrapper Version="1" IsJava="False">
+              <ConfigValues />
+            </ConfigWrapper>
+          </Metadata>
+        </SerializedVertexData>
+      </node>
+      <node id="cea4dc24-dc38-49d7-811b-70fe3dab4b6f">
+        <SerializedVertexData Version="1" X="80" Y="354">
+          <Metadata type="TraceLab.Core.Components.ComponentMetadata, TraceLab.Core, Culture=neutral, PublicKeyToken=2c83cea59a8bb151" Label="Extract Top 40" ComponentMetadataDefinitionID="247872ca-9a01-5bf6-a25f-e2f5e2001823" WaitsForAllPredecessors="True">
+            <IOSpec Version="2">
+              <Input>
+                <IOItem>
+                  <IOItemDefinition Name="TargetMatrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>PR_loopTop40</MappedTo>
+                </IOItem>
+                <IOItem>
+                  <IOItemDefinition Name="OriginalMatrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>LSI_Dyn_loop</MappedTo>
+                </IOItem>
+              </Input>
+              <Output>
+                <IOItem>
+                  <IOItemDefinition Name="ExtractedLinks" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+                  <MappedTo>Top40</MappedTo>
+                </IOItem>
+              </Output>
+            </IOSpec>
+            <ConfigWrapper Version="1" IsJava="False">
+              <ConfigValues />
+            </ConfigWrapper>
+          </Metadata>
+        </SerializedVertexData>
+      </node>
+      <node id="973cb1c9-9251-4030-ac51-9fdf276a95ae">
+        <SerializedVertexData Version="1" X="80" Y="388">
+          <Metadata type="TraceLab.Core.Components.ComponentMetadata, TraceLab.Core, Culture=neutral, PublicKeyToken=2c83cea59a8bb151" Label="Extract Top 50" ComponentMetadataDefinitionID="247872ca-9a01-5bf6-a25f-e2f5e2001823" WaitsForAllPredecessors="True">
+            <IOSpec Version="2">
+              <Input>
+                <IOItem>
+                  <IOItemDefinition Name="TargetMatrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>PR_loopTop50</MappedTo>
+                </IOItem>
+                <IOItem>
+                  <IOItemDefinition Name="OriginalMatrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>LSI_Dyn_loop</MappedTo>
+                </IOItem>
+              </Input>
+              <Output>
+                <IOItem>
+                  <IOItemDefinition Name="ExtractedLinks" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+                  <MappedTo>Top50</MappedTo>
+                </IOItem>
+              </Output>
+            </IOSpec>
+            <ConfigWrapper Version="1" IsJava="False">
+              <ConfigValues />
+            </ConfigWrapper>
+          </Metadata>
+        </SerializedVertexData>
+      </node>
+      <node id="1441eeda-85a1-42f7-a2f6-af3a5aa1bf30">
+        <SerializedVertexData Version="1" X="80" Y="284">
+          <Metadata type="TraceLab.Core.Components.ComponentMetadata, TraceLab.Core, Culture=neutral, PublicKeyToken=2c83cea59a8bb151" Label="Extract Top 20" ComponentMetadataDefinitionID="247872ca-9a01-5bf6-a25f-e2f5e2001823" WaitsForAllPredecessors="True">
+            <IOSpec Version="2">
+              <Input>
+                <IOItem>
+                  <IOItemDefinition Name="TargetMatrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>PR_loopTop20</MappedTo>
+                </IOItem>
+                <IOItem>
+                  <IOItemDefinition Name="OriginalMatrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>LSI_Dyn_loop</MappedTo>
+                </IOItem>
+              </Input>
+              <Output>
+                <IOItem>
+                  <IOItemDefinition Name="ExtractedLinks" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+                  <MappedTo>Top20</MappedTo>
+                </IOItem>
+              </Output>
+            </IOSpec>
+            <ConfigWrapper Version="1" IsJava="False">
+              <ConfigValues />
+            </ConfigWrapper>
+          </Metadata>
+        </SerializedVertexData>
+      </node>
+      <node id="6d3fc139-8578-4f46-8ab3-d886eb60229c">
+        <SerializedVertexData Version="1" X="79" Y="423">
+          <Metadata type="TraceLab.Core.Components.ComponentMetadata, TraceLab.Core, Culture=neutral, PublicKeyToken=2c83cea59a8bb151" Label="Extract Top 60" ComponentMetadataDefinitionID="247872ca-9a01-5bf6-a25f-e2f5e2001823" WaitsForAllPredecessors="True">
+            <IOSpec Version="2">
+              <Input>
+                <IOItem>
+                  <IOItemDefinition Name="TargetMatrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>PR_loopTop60</MappedTo>
+                </IOItem>
+                <IOItem>
+                  <IOItemDefinition Name="OriginalMatrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>LSI_Dyn_loop</MappedTo>
+                </IOItem>
+              </Input>
+              <Output>
+                <IOItem>
+                  <IOItemDefinition Name="ExtractedLinks" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+                  <MappedTo>Top60</MappedTo>
+                </IOItem>
+              </Output>
+            </IOSpec>
+            <ConfigWrapper Version="1" IsJava="False">
+              <ConfigValues />
+            </ConfigWrapper>
+          </Metadata>
+        </SerializedVertexData>
+      </node>
+      <node id="bda22c17-568c-4bf2-8087-d5d0cc8efbae">
+        <SerializedVertexData Version="1" X="78" Y="456">
+          <Metadata type="TraceLab.Core.Components.ComponentMetadata, TraceLab.Core, Culture=neutral, PublicKeyToken=2c83cea59a8bb151" Label="Extract Top 70" ComponentMetadataDefinitionID="247872ca-9a01-5bf6-a25f-e2f5e2001823" WaitsForAllPredecessors="True">
+            <IOSpec Version="2">
+              <Input>
+                <IOItem>
+                  <IOItemDefinition Name="TargetMatrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>PR_loopTop70</MappedTo>
+                </IOItem>
+                <IOItem>
+                  <IOItemDefinition Name="OriginalMatrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>LSI_Dyn_loop</MappedTo>
+                </IOItem>
+              </Input>
+              <Output>
+                <IOItem>
+                  <IOItemDefinition Name="ExtractedLinks" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+                  <MappedTo>Top70</MappedTo>
+                </IOItem>
+              </Output>
+            </IOSpec>
+            <ConfigWrapper Version="1" IsJava="False">
+              <ConfigValues />
+            </ConfigWrapper>
+          </Metadata>
+        </SerializedVertexData>
+      </node>
+      <node id="f61c08ef-795d-4cdf-a3eb-4b67022230cd">
+        <SerializedVertexData Version="1" X="77" Y="490">
+          <Metadata type="TraceLab.Core.Components.ComponentMetadata, TraceLab.Core, Culture=neutral, PublicKeyToken=2c83cea59a8bb151" Label="Extract Top 80" ComponentMetadataDefinitionID="247872ca-9a01-5bf6-a25f-e2f5e2001823" WaitsForAllPredecessors="True">
+            <IOSpec Version="2">
+              <Input>
+                <IOItem>
+                  <IOItemDefinition Name="TargetMatrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>PR_loopTop80</MappedTo>
+                </IOItem>
+                <IOItem>
+                  <IOItemDefinition Name="OriginalMatrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>LSI_Dyn_loop</MappedTo>
+                </IOItem>
+              </Input>
+              <Output>
+                <IOItem>
+                  <IOItemDefinition Name="ExtractedLinks" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+                  <MappedTo>Top80</MappedTo>
+                </IOItem>
+              </Output>
+            </IOSpec>
+            <ConfigWrapper Version="1" IsJava="False">
+              <ConfigValues />
+            </ConfigWrapper>
+          </Metadata>
+        </SerializedVertexData>
+      </node>
+      <node id="58b8edbd-c1ae-4604-bc1e-a2af73c989be">
+        <SerializedVertexData Version="1" X="76" Y="524">
+          <Metadata type="TraceLab.Core.Components.ComponentMetadata, TraceLab.Core, Culture=neutral, PublicKeyToken=2c83cea59a8bb151" Label="Extract Top 90" ComponentMetadataDefinitionID="247872ca-9a01-5bf6-a25f-e2f5e2001823" WaitsForAllPredecessors="True">
+            <IOSpec Version="2">
+              <Input>
+                <IOItem>
+                  <IOItemDefinition Name="TargetMatrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>PR_loopTop90</MappedTo>
+                </IOItem>
+                <IOItem>
+                  <IOItemDefinition Name="OriginalMatrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>LSI_Dyn_loop</MappedTo>
+                </IOItem>
+              </Input>
+              <Output>
+                <IOItem>
+                  <IOItemDefinition Name="ExtractedLinks" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+                  <MappedTo>Top90</MappedTo>
+                </IOItem>
+              </Output>
+            </IOSpec>
+            <ConfigWrapper Version="1" IsJava="False">
+              <ConfigValues />
+            </ConfigWrapper>
+          </Metadata>
+        </SerializedVertexData>
+      </node>
+      <node id="530c9908-2d80-4b48-8fb4-4aa815707f51">
+        <SerializedVertexData Version="1" X="321" Y="250">
+          <Metadata type="TraceLab.Core.Components.ComponentMetadata, TraceLab.Core, Culture=neutral, PublicKeyToken=2c83cea59a8bb151" Label="Extract Bot 10" ComponentMetadataDefinitionID="247872ca-9a01-5bf6-a25f-e2f5e2001823" WaitsForAllPredecessors="True">
+            <IOSpec Version="2">
+              <Input>
+                <IOItem>
+                  <IOItemDefinition Name="TargetMatrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>PR_loopBot10</MappedTo>
+                </IOItem>
+                <IOItem>
+                  <IOItemDefinition Name="OriginalMatrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>LSI_Dyn_loop</MappedTo>
+                </IOItem>
+              </Input>
+              <Output>
+                <IOItem>
+                  <IOItemDefinition Name="ExtractedLinks" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+                  <MappedTo>Bot10</MappedTo>
+                </IOItem>
+              </Output>
+            </IOSpec>
+            <ConfigWrapper Version="1" IsJava="False">
+              <ConfigValues />
+            </ConfigWrapper>
+          </Metadata>
+        </SerializedVertexData>
+      </node>
+      <node id="a00694a5-b144-4d6f-b19f-6f8441d0c3cd">
+        <SerializedVertexData Version="1" X="323" Y="321">
+          <Metadata type="TraceLab.Core.Components.ComponentMetadata, TraceLab.Core, Culture=neutral, PublicKeyToken=2c83cea59a8bb151" Label="Extract Bot 30" ComponentMetadataDefinitionID="247872ca-9a01-5bf6-a25f-e2f5e2001823" WaitsForAllPredecessors="True">
+            <IOSpec Version="2">
+              <Input>
+                <IOItem>
+                  <IOItemDefinition Name="TargetMatrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>PR_loopBot30</MappedTo>
+                </IOItem>
+                <IOItem>
+                  <IOItemDefinition Name="OriginalMatrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>LSI_Dyn_loop</MappedTo>
+                </IOItem>
+              </Input>
+              <Output>
+                <IOItem>
+                  <IOItemDefinition Name="ExtractedLinks" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+                  <MappedTo>Bot30</MappedTo>
+                </IOItem>
+              </Output>
+            </IOSpec>
+            <ConfigWrapper Version="1" IsJava="False">
+              <ConfigValues />
+            </ConfigWrapper>
+          </Metadata>
+        </SerializedVertexData>
+      </node>
+      <node id="943f616c-a306-41d4-811a-8671dc1ec0ff">
+        <SerializedVertexData Version="1" X="323" Y="355">
+          <Metadata type="TraceLab.Core.Components.ComponentMetadata, TraceLab.Core, Culture=neutral, PublicKeyToken=2c83cea59a8bb151" Label="Extract Bot 40" ComponentMetadataDefinitionID="247872ca-9a01-5bf6-a25f-e2f5e2001823" WaitsForAllPredecessors="True">
+            <IOSpec Version="2">
+              <Input>
+                <IOItem>
+                  <IOItemDefinition Name="TargetMatrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>PR_loopBot40</MappedTo>
+                </IOItem>
+                <IOItem>
+                  <IOItemDefinition Name="OriginalMatrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>LSI_Dyn_loop</MappedTo>
+                </IOItem>
+              </Input>
+              <Output>
+                <IOItem>
+                  <IOItemDefinition Name="ExtractedLinks" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+                  <MappedTo>Bot40</MappedTo>
+                </IOItem>
+              </Output>
+            </IOSpec>
+            <ConfigWrapper Version="1" IsJava="False">
+              <ConfigValues />
+            </ConfigWrapper>
+          </Metadata>
+        </SerializedVertexData>
+      </node>
+      <node id="5cdd84df-7789-409a-a863-472a9e698179">
+        <SerializedVertexData Version="1" X="322" Y="285">
+          <Metadata type="TraceLab.Core.Components.ComponentMetadata, TraceLab.Core, Culture=neutral, PublicKeyToken=2c83cea59a8bb151" Label="Extract Bot 20" ComponentMetadataDefinitionID="247872ca-9a01-5bf6-a25f-e2f5e2001823" WaitsForAllPredecessors="True">
+            <IOSpec Version="2">
+              <Input>
+                <IOItem>
+                  <IOItemDefinition Name="TargetMatrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>PR_loopBot20</MappedTo>
+                </IOItem>
+                <IOItem>
+                  <IOItemDefinition Name="OriginalMatrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>LSI_Dyn_loop</MappedTo>
+                </IOItem>
+              </Input>
+              <Output>
+                <IOItem>
+                  <IOItemDefinition Name="ExtractedLinks" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+                  <MappedTo>Bot20</MappedTo>
+                </IOItem>
+              </Output>
+            </IOSpec>
+            <ConfigWrapper Version="1" IsJava="False">
+              <ConfigValues />
+            </ConfigWrapper>
+          </Metadata>
+        </SerializedVertexData>
+      </node>
+      <node id="6288efc9-67ff-4e75-a530-b699d16497de">
+        <SerializedVertexData Version="1" X="324" Y="389">
+          <Metadata type="TraceLab.Core.Components.ComponentMetadata, TraceLab.Core, Culture=neutral, PublicKeyToken=2c83cea59a8bb151" Label="Extract Bot 50" ComponentMetadataDefinitionID="247872ca-9a01-5bf6-a25f-e2f5e2001823" WaitsForAllPredecessors="True">
+            <IOSpec Version="2">
+              <Input>
+                <IOItem>
+                  <IOItemDefinition Name="TargetMatrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>PR_loopBot50</MappedTo>
+                </IOItem>
+                <IOItem>
+                  <IOItemDefinition Name="OriginalMatrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>LSI_Dyn_loop</MappedTo>
+                </IOItem>
+              </Input>
+              <Output>
+                <IOItem>
+                  <IOItemDefinition Name="ExtractedLinks" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+                  <MappedTo>Bot50</MappedTo>
+                </IOItem>
+              </Output>
+            </IOSpec>
+            <ConfigWrapper Version="1" IsJava="False">
+              <ConfigValues />
+            </ConfigWrapper>
+          </Metadata>
+        </SerializedVertexData>
+      </node>
+      <node id="bba5b811-2257-416c-908d-43abd0e2a2f1">
+        <SerializedVertexData Version="1" X="324" Y="424">
+          <Metadata type="TraceLab.Core.Components.ComponentMetadata, TraceLab.Core, Culture=neutral, PublicKeyToken=2c83cea59a8bb151" Label="Extract Bot 60" ComponentMetadataDefinitionID="247872ca-9a01-5bf6-a25f-e2f5e2001823" WaitsForAllPredecessors="True">
+            <IOSpec Version="2">
+              <Input>
+                <IOItem>
+                  <IOItemDefinition Name="TargetMatrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>PR_loopBot60</MappedTo>
+                </IOItem>
+                <IOItem>
+                  <IOItemDefinition Name="OriginalMatrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>LSI_Dyn_loop</MappedTo>
+                </IOItem>
+              </Input>
+              <Output>
+                <IOItem>
+                  <IOItemDefinition Name="ExtractedLinks" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+                  <MappedTo>Bot60</MappedTo>
+                </IOItem>
+              </Output>
+            </IOSpec>
+            <ConfigWrapper Version="1" IsJava="False">
+              <ConfigValues />
+            </ConfigWrapper>
+          </Metadata>
+        </SerializedVertexData>
+      </node>
+      <node id="f40ce11f-4bf2-4817-b129-f7cfdda805e2">
+        <SerializedVertexData Version="1" X="323" Y="457">
+          <Metadata type="TraceLab.Core.Components.ComponentMetadata, TraceLab.Core, Culture=neutral, PublicKeyToken=2c83cea59a8bb151" Label="Extract Bot 70" ComponentMetadataDefinitionID="247872ca-9a01-5bf6-a25f-e2f5e2001823" WaitsForAllPredecessors="True">
+            <IOSpec Version="2">
+              <Input>
+                <IOItem>
+                  <IOItemDefinition Name="TargetMatrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>PR_loopBot70</MappedTo>
+                </IOItem>
+                <IOItem>
+                  <IOItemDefinition Name="OriginalMatrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>LSI_Dyn_loop</MappedTo>
+                </IOItem>
+              </Input>
+              <Output>
+                <IOItem>
+                  <IOItemDefinition Name="ExtractedLinks" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+                  <MappedTo>Bot70</MappedTo>
+                </IOItem>
+              </Output>
+            </IOSpec>
+            <ConfigWrapper Version="1" IsJava="False">
+              <ConfigValues />
+            </ConfigWrapper>
+          </Metadata>
+        </SerializedVertexData>
+      </node>
+      <node id="8fd0f48d-4814-4f2d-8244-0551f42f4ab3">
+        <SerializedVertexData Version="1" X="324" Y="491">
+          <Metadata type="TraceLab.Core.Components.ComponentMetadata, TraceLab.Core, Culture=neutral, PublicKeyToken=2c83cea59a8bb151" Label="Extract Bot 80" ComponentMetadataDefinitionID="247872ca-9a01-5bf6-a25f-e2f5e2001823" WaitsForAllPredecessors="True">
+            <IOSpec Version="2">
+              <Input>
+                <IOItem>
+                  <IOItemDefinition Name="TargetMatrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>PR_loopBot80</MappedTo>
+                </IOItem>
+                <IOItem>
+                  <IOItemDefinition Name="OriginalMatrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>LSI_Dyn_loop</MappedTo>
+                </IOItem>
+              </Input>
+              <Output>
+                <IOItem>
+                  <IOItemDefinition Name="ExtractedLinks" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+                  <MappedTo>Bot 80</MappedTo>
+                </IOItem>
+              </Output>
+            </IOSpec>
+            <ConfigWrapper Version="1" IsJava="False">
+              <ConfigValues />
+            </ConfigWrapper>
+          </Metadata>
+        </SerializedVertexData>
+      </node>
+      <node id="61d2ef5c-f20e-489b-8772-995a4145dedc">
+        <SerializedVertexData Version="1" X="324" Y="526">
+          <Metadata type="TraceLab.Core.Components.ComponentMetadata, TraceLab.Core, Culture=neutral, PublicKeyToken=2c83cea59a8bb151" Label="Extract Bot 90" ComponentMetadataDefinitionID="247872ca-9a01-5bf6-a25f-e2f5e2001823" WaitsForAllPredecessors="True">
+            <IOSpec Version="2">
+              <Input>
+                <IOItem>
+                  <IOItemDefinition Name="TargetMatrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>PR_loopBot90</MappedTo>
+                </IOItem>
+                <IOItem>
+                  <IOItemDefinition Name="OriginalMatrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>LSI_Dyn_loop</MappedTo>
+                </IOItem>
+              </Input>
+              <Output>
+                <IOItem>
+                  <IOItemDefinition Name="ExtractedLinks" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+                  <MappedTo>Bot 90</MappedTo>
+                </IOItem>
+              </Output>
+            </IOSpec>
+            <ConfigWrapper Version="1" IsJava="False">
+              <ConfigValues />
+            </ConfigWrapper>
+          </Metadata>
+        </SerializedVertexData>
+      </node>
+      <node id="Start">
+        <SerializedVertexData Version="1" X="200" Y="200">
+          <Metadata type="TraceLab.Core.Components.StartNodeMetadata, TraceLab.Core, Culture=neutral, PublicKeyToken=2c83cea59a8bb151" Label="Start" />
+        </SerializedVertexData>
+      </node>
+      <node id="End">
+        <SerializedVertexData Version="1" X="200" Y="576">
+          <Metadata type="TraceLab.Core.Components.EndNodeMetadata, TraceLab.Core, Culture=neutral, PublicKeyToken=2c83cea59a8bb151" Label="End" WaitsForAllPredecessors="True" />
+        </SerializedVertexData>
+      </node>
+      <edge id="0873ea3f-54ec-49e9-af76-fdbbd143ae46" source="eac921c8-54ef-4f3c-b956-ba516c599b5d" target="End" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="e76c8ded-d870-4f29-b7cb-c001b45334f4" source="a53c2219-1ddf-4a32-87d5-85d0ba34838f" target="End" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="a47623ef-eb3f-4bb1-8a83-45467a4bb7de" source="cea4dc24-dc38-49d7-811b-70fe3dab4b6f" target="End" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="708f2afe-a7b8-4e53-9a02-851221099eb7" source="973cb1c9-9251-4030-ac51-9fdf276a95ae" target="End" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="dc95a72d-552b-4973-ba2b-a565bd4e92c4" source="1441eeda-85a1-42f7-a2f6-af3a5aa1bf30" target="End" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="3d5a3de0-9f03-408c-b76d-20c6429b6438" source="6d3fc139-8578-4f46-8ab3-d886eb60229c" target="End" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="2cbd84e9-883b-45b9-9545-a86fe174639e" source="bda22c17-568c-4bf2-8087-d5d0cc8efbae" target="End" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="97dcbf3f-8da0-45c8-bdd2-03543702942a" source="f61c08ef-795d-4cdf-a3eb-4b67022230cd" target="End" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="199b6676-eaf1-4d18-a228-f934e5164e02" source="58b8edbd-c1ae-4604-bc1e-a2af73c989be" target="End" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="b2cda85b-b408-4664-b274-39f941a0cb13" source="530c9908-2d80-4b48-8fb4-4aa815707f51" target="End" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="1edefa3f-9587-4dc1-aff6-93ca4dccd2ae" source="a00694a5-b144-4d6f-b19f-6f8441d0c3cd" target="End" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="a9bfa574-26a4-45a8-8a0a-41a33e1927da" source="943f616c-a306-41d4-811a-8671dc1ec0ff" target="End" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="389a24c1-cbd5-4aea-988b-f0957d6f972b" source="5cdd84df-7789-409a-a863-472a9e698179" target="End" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="d907068d-393c-4529-8d48-57de73f81940" source="6288efc9-67ff-4e75-a530-b699d16497de" target="End" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="181c2e4c-4982-45f4-9f35-93b52bd5b4d2" source="bba5b811-2257-416c-908d-43abd0e2a2f1" target="End" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="348035a8-5e94-4526-8d38-9e133caa700c" source="f40ce11f-4bf2-4817-b129-f7cfdda805e2" target="End" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="63052446-7eaf-4b26-a266-7a7da2a26445" source="8fd0f48d-4814-4f2d-8244-0551f42f4ab3" target="End" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="0076c970-fb7d-4a82-befa-d8dd48b58729" source="61d2ef5c-f20e-489b-8772-995a4145dedc" target="End" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="484c637f-2237-4135-a641-075358b4320f" source="Start" target="eac921c8-54ef-4f3c-b956-ba516c599b5d" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="5902bb99-88ae-4039-9405-efed57c51078" source="Start" target="a53c2219-1ddf-4a32-87d5-85d0ba34838f" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="490ca765-81d6-43bb-ab18-a42969e821f3" source="Start" target="cea4dc24-dc38-49d7-811b-70fe3dab4b6f" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="c76fd080-9c5c-41a4-a82e-400f69125fab" source="Start" target="973cb1c9-9251-4030-ac51-9fdf276a95ae" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="9ae4c9ea-d36b-461c-b628-9393b5e133a7" source="Start" target="1441eeda-85a1-42f7-a2f6-af3a5aa1bf30" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="b0f0a330-dda0-4cef-91dd-b8c65539607a" source="Start" target="6d3fc139-8578-4f46-8ab3-d886eb60229c" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="d09339d0-621a-4149-9593-00e54884cfe3" source="Start" target="bda22c17-568c-4bf2-8087-d5d0cc8efbae" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="c4c54a73-486d-47e5-874f-6387ca56970a" source="Start" target="f61c08ef-795d-4cdf-a3eb-4b67022230cd" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="23029c68-2a9e-4eed-a62a-c110cd9dba51" source="Start" target="58b8edbd-c1ae-4604-bc1e-a2af73c989be" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="b5a37f5b-5fe2-4f03-a133-5f605e38cdf2" source="Start" target="530c9908-2d80-4b48-8fb4-4aa815707f51" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="62cb14ad-fb58-4206-9751-9acfbcd42b18" source="Start" target="a00694a5-b144-4d6f-b19f-6f8441d0c3cd" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="330be248-9329-41e5-8f02-8d8f521e6353" source="Start" target="943f616c-a306-41d4-811a-8671dc1ec0ff" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="74e910e2-1bcc-45aa-9dd8-7baed3d2245d" source="Start" target="5cdd84df-7789-409a-a863-472a9e698179" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="bc5dcbd2-3c37-4a2f-a3ba-aa9cb3a473d3" source="Start" target="6288efc9-67ff-4e75-a530-b699d16497de" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="40b1c99b-ef50-4d11-86a6-ed292262abd3" source="Start" target="bba5b811-2257-416c-908d-43abd0e2a2f1" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="01402cfd-2168-4fc2-b180-63f329f80590" source="Start" target="f40ce11f-4bf2-4817-b129-f7cfdda805e2" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="dcfbd85f-44dd-4e28-b723-55158f461c6a" source="Start" target="8fd0f48d-4814-4f2d-8244-0551f42f4ab3" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="612e446c-139e-4cca-89f8-a3c58a34b5c3" source="Start" target="61d2ef5c-f20e-489b-8772-995a4145dedc" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+    </graph>
+  </ComponentGraph>
+</CompositeComponentMetadataDefinition>

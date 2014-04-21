@@ -1,0 +1,1030 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CompositeComponentMetadataDefinition xmlVersion="2">
+  <Info>
+    <ID>24c2b5e6-f0e0-4c2d-933c-ab7a6af368c8</ID>
+    <Version>1.0.0.0</Version>
+    <Label>2013.EMSE.Dit - Filter top and bottom</Label>
+    <Name>2013.EMSE.Dit - Filter top and bottom</Name>
+    <Author>SEMERU; Evan Moritz</Author>
+    <Description>Filters the top and bottom of a ranklist in 10% increments</Description>
+  </Info>
+  <Input>
+    <IOItemDefinition Name="Matrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+  </Input>
+  <Output>
+    <IOItemDefinition Name="MatrixBot10" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+    <IOItemDefinition Name="MatrixBot20" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+    <IOItemDefinition Name="MatrixBot30" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+    <IOItemDefinition Name="MatrixBot40" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+    <IOItemDefinition Name="MatrixBot50" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+    <IOItemDefinition Name="MatrixBot60" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+    <IOItemDefinition Name="MatrixBot70" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+    <IOItemDefinition Name="MatrixBot80" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+    <IOItemDefinition Name="MatrixBot90" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+    <IOItemDefinition Name="MatrixTop10" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+    <IOItemDefinition Name="MatrixTop20" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+    <IOItemDefinition Name="MatrixTop30" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+    <IOItemDefinition Name="MatrixTop40" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+    <IOItemDefinition Name="MatrixTop50" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+    <IOItemDefinition Name="MatrixTop60" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+    <IOItemDefinition Name="MatrixTop70" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+    <IOItemDefinition Name="MatrixTop80" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+    <IOItemDefinition Name="MatrixTop90" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+  </Output>
+  <ConfigDefinition>
+    <IsJava>False</IsJava>
+    <ConfigProperties>
+      <PropertyObject>
+        <Version>3</Version>
+        <Name>e20133cf-128a-4f42-8b7e-f973f0f1825f:Percentage</Name>
+        <DisplayName>Remove Bottom 10% Percentage</DisplayName>
+        <Description />
+        <ValueType>System.Double, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+        <Visible>False</Visible>
+        <IsEnum>False</IsEnum>
+        <Value IsNull="False">
+          <double>0.1</double>
+        </Value>
+      </PropertyObject>
+      <PropertyObject>
+        <Version>3</Version>
+        <Name>317e56c1-3901-49d5-a70b-ad537010562a:Percentage</Name>
+        <DisplayName>Remove Bottom 20% Percentage</DisplayName>
+        <Description />
+        <ValueType>System.Double, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+        <Visible>False</Visible>
+        <IsEnum>False</IsEnum>
+        <Value IsNull="False">
+          <double>0.2</double>
+        </Value>
+      </PropertyObject>
+      <PropertyObject>
+        <Version>3</Version>
+        <Name>93dc0a59-2197-4da2-a119-77b1814d2d98:Percentage</Name>
+        <DisplayName>Remove Bottom 30% Percentage</DisplayName>
+        <Description />
+        <ValueType>System.Double, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+        <Visible>False</Visible>
+        <IsEnum>False</IsEnum>
+        <Value IsNull="False">
+          <double>0.3</double>
+        </Value>
+      </PropertyObject>
+      <PropertyObject>
+        <Version>3</Version>
+        <Name>d71154fe-e269-430d-b415-cec76b095656:Percentage</Name>
+        <DisplayName>Remove Bottom 40% Percentage</DisplayName>
+        <Description />
+        <ValueType>System.Double, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+        <Visible>False</Visible>
+        <IsEnum>False</IsEnum>
+        <Value IsNull="False">
+          <double>0.4</double>
+        </Value>
+      </PropertyObject>
+      <PropertyObject>
+        <Version>3</Version>
+        <Name>6f51c0d4-85cd-4dab-b0fe-a3b4bd72d1af:Percentage</Name>
+        <DisplayName>Remove Bottom 50% Percentage</DisplayName>
+        <Description />
+        <ValueType>System.Double, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+        <Visible>False</Visible>
+        <IsEnum>False</IsEnum>
+        <Value IsNull="False">
+          <double>0.5</double>
+        </Value>
+      </PropertyObject>
+      <PropertyObject>
+        <Version>3</Version>
+        <Name>99608cfa-bfe8-44c9-adf8-4dd84d7e9f06:Percentage</Name>
+        <DisplayName>Remove Bottom 60% Percentage</DisplayName>
+        <Description />
+        <ValueType>System.Double, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+        <Visible>False</Visible>
+        <IsEnum>False</IsEnum>
+        <Value IsNull="False">
+          <double>0.6</double>
+        </Value>
+      </PropertyObject>
+      <PropertyObject>
+        <Version>3</Version>
+        <Name>1afdb1c0-ca25-478f-b2cb-bfba1aa8c8c4:Percentage</Name>
+        <DisplayName>Remove Bottom 70% Percentage</DisplayName>
+        <Description />
+        <ValueType>System.Double, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+        <Visible>False</Visible>
+        <IsEnum>False</IsEnum>
+        <Value IsNull="False">
+          <double>0.7</double>
+        </Value>
+      </PropertyObject>
+      <PropertyObject>
+        <Version>3</Version>
+        <Name>e70310f0-166f-42cf-8a81-10aff7cbc7eb:Percentage</Name>
+        <DisplayName>Remove Bottom 80% Percentage</DisplayName>
+        <Description />
+        <ValueType>System.Double, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+        <Visible>False</Visible>
+        <IsEnum>False</IsEnum>
+        <Value IsNull="False">
+          <double>0.8</double>
+        </Value>
+      </PropertyObject>
+      <PropertyObject>
+        <Version>3</Version>
+        <Name>caaa3ed2-8eda-49f9-85f2-4937b297c34d:Percentage</Name>
+        <DisplayName>Remove Bottom 90% Percentage</DisplayName>
+        <Description />
+        <ValueType>System.Double, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+        <Visible>False</Visible>
+        <IsEnum>False</IsEnum>
+        <Value IsNull="False">
+          <double>0.9</double>
+        </Value>
+      </PropertyObject>
+      <PropertyObject>
+        <Version>3</Version>
+        <Name>9dfa3483-acb7-4173-bb4c-4d063eba2104:Percentage</Name>
+        <DisplayName>Remove Top 10% Percentage</DisplayName>
+        <Description />
+        <ValueType>System.Double, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+        <Visible>False</Visible>
+        <IsEnum>False</IsEnum>
+        <Value IsNull="False">
+          <double>0.1</double>
+        </Value>
+      </PropertyObject>
+      <PropertyObject>
+        <Version>3</Version>
+        <Name>8cdfa976-f123-4978-8f7e-bf1891cbfe0e:Percentage</Name>
+        <DisplayName>Remove Top 20% Percentage</DisplayName>
+        <Description />
+        <ValueType>System.Double, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+        <Visible>False</Visible>
+        <IsEnum>False</IsEnum>
+        <Value IsNull="False">
+          <double>0.2</double>
+        </Value>
+      </PropertyObject>
+      <PropertyObject>
+        <Version>3</Version>
+        <Name>e0c4de01-1174-45ee-b493-bec2533554f6:Percentage</Name>
+        <DisplayName>Remove Top 30% Percentage</DisplayName>
+        <Description />
+        <ValueType>System.Double, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+        <Visible>False</Visible>
+        <IsEnum>False</IsEnum>
+        <Value IsNull="False">
+          <double>0.3</double>
+        </Value>
+      </PropertyObject>
+      <PropertyObject>
+        <Version>3</Version>
+        <Name>0f4f6896-cd15-4574-b0e8-6f4c56c77fd4:Percentage</Name>
+        <DisplayName>Remove Top 40% Percentage</DisplayName>
+        <Description />
+        <ValueType>System.Double, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+        <Visible>False</Visible>
+        <IsEnum>False</IsEnum>
+        <Value IsNull="False">
+          <double>0.4</double>
+        </Value>
+      </PropertyObject>
+      <PropertyObject>
+        <Version>3</Version>
+        <Name>19b5fe61-779d-4866-a425-5275fdaf7def:Percentage</Name>
+        <DisplayName>Remove Top 50% Percentage</DisplayName>
+        <Description />
+        <ValueType>System.Double, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+        <Visible>False</Visible>
+        <IsEnum>False</IsEnum>
+        <Value IsNull="False">
+          <double>0.5</double>
+        </Value>
+      </PropertyObject>
+      <PropertyObject>
+        <Version>3</Version>
+        <Name>8ed05e31-0550-48b5-a9f0-2d54769a3b6d:Percentage</Name>
+        <DisplayName>Remove Top 60% Percentage</DisplayName>
+        <Description />
+        <ValueType>System.Double, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+        <Visible>False</Visible>
+        <IsEnum>False</IsEnum>
+        <Value IsNull="False">
+          <double>0.6</double>
+        </Value>
+      </PropertyObject>
+      <PropertyObject>
+        <Version>3</Version>
+        <Name>0183bcf9-7154-4b2d-9663-eff4cee5036b:Percentage</Name>
+        <DisplayName>Remove Top 70% Percentage</DisplayName>
+        <Description />
+        <ValueType>System.Double, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+        <Visible>False</Visible>
+        <IsEnum>False</IsEnum>
+        <Value IsNull="False">
+          <double>0.7</double>
+        </Value>
+      </PropertyObject>
+      <PropertyObject>
+        <Version>3</Version>
+        <Name>ae25b13b-591b-45d1-9e47-699bf0c75d2d:Percentage</Name>
+        <DisplayName>Remove Top 80% Percentage</DisplayName>
+        <Description />
+        <ValueType>System.Double, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+        <Visible>False</Visible>
+        <IsEnum>False</IsEnum>
+        <Value IsNull="False">
+          <double>0.8</double>
+        </Value>
+      </PropertyObject>
+      <PropertyObject>
+        <Version>3</Version>
+        <Name>a390489c-661d-449f-bbd5-3c48818181b5:Percentage</Name>
+        <DisplayName>Remove Top 90% Percentage</DisplayName>
+        <Description />
+        <ValueType>System.Double, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+        <Visible>False</Visible>
+        <IsEnum>False</IsEnum>
+        <Value IsNull="False">
+          <double>0.9</double>
+        </Value>
+      </PropertyObject>
+    </ConfigProperties>
+  </ConfigDefinition>
+  <ComponentGraph>
+    <graph>
+      <References />
+      <ExperimentInfo>
+        <Version>2</Version>
+        <Id>3ba49412-1910-47a8-843d-a2bf2d00f031</Id>
+      </ExperimentInfo>
+      <node id="9dfa3483-acb7-4173-bb4c-4d063eba2104">
+        <SerializedVertexData Version="1" X="115.5" Y="250">
+          <Metadata type="TraceLab.Core.Components.ComponentMetadata, TraceLab.Core, Culture=neutral, PublicKeyToken=2c83cea59a8bb151" Label="Remove Top 10%" ComponentMetadataDefinitionID="bf3d8ac0-ae32-5788-bd03-69a2a346abd7" WaitsForAllPredecessors="True">
+            <IOSpec Version="2">
+              <Input>
+                <IOItem>
+                  <IOItemDefinition Name="Matrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>Matrix</MappedTo>
+                </IOItem>
+              </Input>
+              <Output>
+                <IOItem>
+                  <IOItemDefinition Name="PrunedMatrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+                  <MappedTo>MatrixTop10</MappedTo>
+                </IOItem>
+              </Output>
+            </IOSpec>
+            <ConfigWrapper Version="1" IsJava="False">
+              <ConfigValues>
+                <PropertyObject>
+                  <Version>3</Version>
+                  <Name>Percentage</Name>
+                  <DisplayName>Percentage</DisplayName>
+                  <Description />
+                  <ValueType>System.Double, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+                  <Visible>True</Visible>
+                  <IsEnum>False</IsEnum>
+                  <Value IsNull="False">
+                    <double>0.1</double>
+                  </Value>
+                </PropertyObject>
+              </ConfigValues>
+            </ConfigWrapper>
+          </Metadata>
+        </SerializedVertexData>
+      </node>
+      <node id="8cdfa976-f123-4978-8f7e-bf1891cbfe0e">
+        <SerializedVertexData Version="1" X="114.5" Y="284">
+          <Metadata type="TraceLab.Core.Components.ComponentMetadata, TraceLab.Core, Culture=neutral, PublicKeyToken=2c83cea59a8bb151" Label="Remove Top 20%" ComponentMetadataDefinitionID="bf3d8ac0-ae32-5788-bd03-69a2a346abd7" WaitsForAllPredecessors="True">
+            <IOSpec Version="2">
+              <Input>
+                <IOItem>
+                  <IOItemDefinition Name="Matrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>Matrix</MappedTo>
+                </IOItem>
+              </Input>
+              <Output>
+                <IOItem>
+                  <IOItemDefinition Name="PrunedMatrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+                  <MappedTo>MatrixTop20</MappedTo>
+                </IOItem>
+              </Output>
+            </IOSpec>
+            <ConfigWrapper Version="1" IsJava="False">
+              <ConfigValues>
+                <PropertyObject>
+                  <Version>3</Version>
+                  <Name>Percentage</Name>
+                  <DisplayName>Percentage</DisplayName>
+                  <Description />
+                  <ValueType>System.Double, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+                  <Visible>True</Visible>
+                  <IsEnum>False</IsEnum>
+                  <Value IsNull="False">
+                    <double>0.2</double>
+                  </Value>
+                </PropertyObject>
+              </ConfigValues>
+            </ConfigWrapper>
+          </Metadata>
+        </SerializedVertexData>
+      </node>
+      <node id="e0c4de01-1174-45ee-b493-bec2533554f6">
+        <SerializedVertexData Version="1" X="111.5" Y="319">
+          <Metadata type="TraceLab.Core.Components.ComponentMetadata, TraceLab.Core, Culture=neutral, PublicKeyToken=2c83cea59a8bb151" Label="Remove Top 30%" ComponentMetadataDefinitionID="bf3d8ac0-ae32-5788-bd03-69a2a346abd7" WaitsForAllPredecessors="True">
+            <IOSpec Version="2">
+              <Input>
+                <IOItem>
+                  <IOItemDefinition Name="Matrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>Matrix</MappedTo>
+                </IOItem>
+              </Input>
+              <Output>
+                <IOItem>
+                  <IOItemDefinition Name="PrunedMatrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+                  <MappedTo>MatrixTop30</MappedTo>
+                </IOItem>
+              </Output>
+            </IOSpec>
+            <ConfigWrapper Version="1" IsJava="False">
+              <ConfigValues>
+                <PropertyObject>
+                  <Version>3</Version>
+                  <Name>Percentage</Name>
+                  <DisplayName>Percentage</DisplayName>
+                  <Description />
+                  <ValueType>System.Double, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+                  <Visible>True</Visible>
+                  <IsEnum>False</IsEnum>
+                  <Value IsNull="False">
+                    <double>0.3</double>
+                  </Value>
+                </PropertyObject>
+              </ConfigValues>
+            </ConfigWrapper>
+          </Metadata>
+        </SerializedVertexData>
+      </node>
+      <node id="0f4f6896-cd15-4574-b0e8-6f4c56c77fd4">
+        <SerializedVertexData Version="1" X="112.5" Y="353">
+          <Metadata type="TraceLab.Core.Components.ComponentMetadata, TraceLab.Core, Culture=neutral, PublicKeyToken=2c83cea59a8bb151" Label="Remove Top 40%" ComponentMetadataDefinitionID="bf3d8ac0-ae32-5788-bd03-69a2a346abd7" WaitsForAllPredecessors="True">
+            <IOSpec Version="2">
+              <Input>
+                <IOItem>
+                  <IOItemDefinition Name="Matrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>Matrix</MappedTo>
+                </IOItem>
+              </Input>
+              <Output>
+                <IOItem>
+                  <IOItemDefinition Name="PrunedMatrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+                  <MappedTo>MatrixTop40</MappedTo>
+                </IOItem>
+              </Output>
+            </IOSpec>
+            <ConfigWrapper Version="1" IsJava="False">
+              <ConfigValues>
+                <PropertyObject>
+                  <Version>3</Version>
+                  <Name>Percentage</Name>
+                  <DisplayName>Percentage</DisplayName>
+                  <Description />
+                  <ValueType>System.Double, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+                  <Visible>True</Visible>
+                  <IsEnum>False</IsEnum>
+                  <Value IsNull="False">
+                    <double>0.4</double>
+                  </Value>
+                </PropertyObject>
+              </ConfigValues>
+            </ConfigWrapper>
+          </Metadata>
+        </SerializedVertexData>
+      </node>
+      <node id="8ed05e31-0550-48b5-a9f0-2d54769a3b6d">
+        <SerializedVertexData Version="1" X="112.5" Y="419">
+          <Metadata type="TraceLab.Core.Components.ComponentMetadata, TraceLab.Core, Culture=neutral, PublicKeyToken=2c83cea59a8bb151" Label="Remove Top 60%" ComponentMetadataDefinitionID="bf3d8ac0-ae32-5788-bd03-69a2a346abd7" WaitsForAllPredecessors="True">
+            <IOSpec Version="2">
+              <Input>
+                <IOItem>
+                  <IOItemDefinition Name="Matrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>Matrix</MappedTo>
+                </IOItem>
+              </Input>
+              <Output>
+                <IOItem>
+                  <IOItemDefinition Name="PrunedMatrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+                  <MappedTo>MatrixTop60</MappedTo>
+                </IOItem>
+              </Output>
+            </IOSpec>
+            <ConfigWrapper Version="1" IsJava="False">
+              <ConfigValues>
+                <PropertyObject>
+                  <Version>3</Version>
+                  <Name>Percentage</Name>
+                  <DisplayName>Percentage</DisplayName>
+                  <Description />
+                  <ValueType>System.Double, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+                  <Visible>True</Visible>
+                  <IsEnum>False</IsEnum>
+                  <Value IsNull="False">
+                    <double>0.6</double>
+                  </Value>
+                </PropertyObject>
+              </ConfigValues>
+            </ConfigWrapper>
+          </Metadata>
+        </SerializedVertexData>
+      </node>
+      <node id="19b5fe61-779d-4866-a425-5275fdaf7def">
+        <SerializedVertexData Version="1" X="111.5" Y="386">
+          <Metadata type="TraceLab.Core.Components.ComponentMetadata, TraceLab.Core, Culture=neutral, PublicKeyToken=2c83cea59a8bb151" Label="Remove Top 50%" ComponentMetadataDefinitionID="bf3d8ac0-ae32-5788-bd03-69a2a346abd7" WaitsForAllPredecessors="True">
+            <IOSpec Version="2">
+              <Input>
+                <IOItem>
+                  <IOItemDefinition Name="Matrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>Matrix</MappedTo>
+                </IOItem>
+              </Input>
+              <Output>
+                <IOItem>
+                  <IOItemDefinition Name="PrunedMatrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+                  <MappedTo>MatrixTop50</MappedTo>
+                </IOItem>
+              </Output>
+            </IOSpec>
+            <ConfigWrapper Version="1" IsJava="False">
+              <ConfigValues>
+                <PropertyObject>
+                  <Version>3</Version>
+                  <Name>Percentage</Name>
+                  <DisplayName>Percentage</DisplayName>
+                  <Description />
+                  <ValueType>System.Double, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+                  <Visible>True</Visible>
+                  <IsEnum>False</IsEnum>
+                  <Value IsNull="False">
+                    <double>0.5</double>
+                  </Value>
+                </PropertyObject>
+              </ConfigValues>
+            </ConfigWrapper>
+          </Metadata>
+        </SerializedVertexData>
+      </node>
+      <node id="0183bcf9-7154-4b2d-9663-eff4cee5036b">
+        <SerializedVertexData Version="1" X="111.5" Y="451">
+          <Metadata type="TraceLab.Core.Components.ComponentMetadata, TraceLab.Core, Culture=neutral, PublicKeyToken=2c83cea59a8bb151" Label="Remove Top 70%" ComponentMetadataDefinitionID="bf3d8ac0-ae32-5788-bd03-69a2a346abd7" WaitsForAllPredecessors="True">
+            <IOSpec Version="2">
+              <Input>
+                <IOItem>
+                  <IOItemDefinition Name="Matrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>Matrix</MappedTo>
+                </IOItem>
+              </Input>
+              <Output>
+                <IOItem>
+                  <IOItemDefinition Name="PrunedMatrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+                  <MappedTo>MatrixTop70</MappedTo>
+                </IOItem>
+              </Output>
+            </IOSpec>
+            <ConfigWrapper Version="1" IsJava="False">
+              <ConfigValues>
+                <PropertyObject>
+                  <Version>3</Version>
+                  <Name>Percentage</Name>
+                  <DisplayName>Percentage</DisplayName>
+                  <Description />
+                  <ValueType>System.Double, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+                  <Visible>True</Visible>
+                  <IsEnum>False</IsEnum>
+                  <Value IsNull="False">
+                    <double>0.7</double>
+                  </Value>
+                </PropertyObject>
+              </ConfigValues>
+            </ConfigWrapper>
+          </Metadata>
+        </SerializedVertexData>
+      </node>
+      <node id="ae25b13b-591b-45d1-9e47-699bf0c75d2d">
+        <SerializedVertexData Version="1" X="110.5" Y="484">
+          <Metadata type="TraceLab.Core.Components.ComponentMetadata, TraceLab.Core, Culture=neutral, PublicKeyToken=2c83cea59a8bb151" Label="Remove Top 80%" ComponentMetadataDefinitionID="bf3d8ac0-ae32-5788-bd03-69a2a346abd7" WaitsForAllPredecessors="True">
+            <IOSpec Version="2">
+              <Input>
+                <IOItem>
+                  <IOItemDefinition Name="Matrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>Matrix</MappedTo>
+                </IOItem>
+              </Input>
+              <Output>
+                <IOItem>
+                  <IOItemDefinition Name="PrunedMatrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+                  <MappedTo>MatrixTop80</MappedTo>
+                </IOItem>
+              </Output>
+            </IOSpec>
+            <ConfigWrapper Version="1" IsJava="False">
+              <ConfigValues>
+                <PropertyObject>
+                  <Version>3</Version>
+                  <Name>Percentage</Name>
+                  <DisplayName>Percentage</DisplayName>
+                  <Description />
+                  <ValueType>System.Double, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+                  <Visible>True</Visible>
+                  <IsEnum>False</IsEnum>
+                  <Value IsNull="False">
+                    <double>0.8</double>
+                  </Value>
+                </PropertyObject>
+              </ConfigValues>
+            </ConfigWrapper>
+          </Metadata>
+        </SerializedVertexData>
+      </node>
+      <node id="a390489c-661d-449f-bbd5-3c48818181b5">
+        <SerializedVertexData Version="1" X="108.5" Y="516">
+          <Metadata type="TraceLab.Core.Components.ComponentMetadata, TraceLab.Core, Culture=neutral, PublicKeyToken=2c83cea59a8bb151" Label="Remove Top 90%" ComponentMetadataDefinitionID="bf3d8ac0-ae32-5788-bd03-69a2a346abd7" WaitsForAllPredecessors="True">
+            <IOSpec Version="2">
+              <Input>
+                <IOItem>
+                  <IOItemDefinition Name="Matrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>Matrix</MappedTo>
+                </IOItem>
+              </Input>
+              <Output>
+                <IOItem>
+                  <IOItemDefinition Name="PrunedMatrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+                  <MappedTo>MatrixTop90</MappedTo>
+                </IOItem>
+              </Output>
+            </IOSpec>
+            <ConfigWrapper Version="1" IsJava="False">
+              <ConfigValues>
+                <PropertyObject>
+                  <Version>3</Version>
+                  <Name>Percentage</Name>
+                  <DisplayName>Percentage</DisplayName>
+                  <Description />
+                  <ValueType>System.Double, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+                  <Visible>True</Visible>
+                  <IsEnum>False</IsEnum>
+                  <Value IsNull="False">
+                    <double>0.9</double>
+                  </Value>
+                </PropertyObject>
+              </ConfigValues>
+            </ConfigWrapper>
+          </Metadata>
+        </SerializedVertexData>
+      </node>
+      <node id="e20133cf-128a-4f42-8b7e-f973f0f1825f">
+        <SerializedVertexData Version="1" X="291.5" Y="252">
+          <Metadata type="TraceLab.Core.Components.ComponentMetadata, TraceLab.Core, Culture=neutral, PublicKeyToken=2c83cea59a8bb151" Label="Remove Bottom 10%" ComponentMetadataDefinitionID="ea876e3c-9ee1-50d9-a00f-37dc3bcb9260" WaitsForAllPredecessors="True">
+            <IOSpec Version="2">
+              <Input>
+                <IOItem>
+                  <IOItemDefinition Name="Matrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>Matrix</MappedTo>
+                </IOItem>
+              </Input>
+              <Output>
+                <IOItem>
+                  <IOItemDefinition Name="PrunedMatrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+                  <MappedTo>MatrixBot10</MappedTo>
+                </IOItem>
+              </Output>
+            </IOSpec>
+            <ConfigWrapper Version="1" IsJava="False">
+              <ConfigValues>
+                <PropertyObject>
+                  <Version>3</Version>
+                  <Name>Percentage</Name>
+                  <DisplayName>Percentage</DisplayName>
+                  <Description />
+                  <ValueType>System.Double, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+                  <Visible>True</Visible>
+                  <IsEnum>False</IsEnum>
+                  <Value IsNull="False">
+                    <double>0.1</double>
+                  </Value>
+                </PropertyObject>
+              </ConfigValues>
+            </ConfigWrapper>
+          </Metadata>
+        </SerializedVertexData>
+      </node>
+      <node id="317e56c1-3901-49d5-a70b-ad537010562a">
+        <SerializedVertexData Version="1" X="290.5" Y="287">
+          <Metadata type="TraceLab.Core.Components.ComponentMetadata, TraceLab.Core, Culture=neutral, PublicKeyToken=2c83cea59a8bb151" Label="Remove Bottom 20%" ComponentMetadataDefinitionID="ea876e3c-9ee1-50d9-a00f-37dc3bcb9260" WaitsForAllPredecessors="True">
+            <IOSpec Version="2">
+              <Input>
+                <IOItem>
+                  <IOItemDefinition Name="Matrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>Matrix</MappedTo>
+                </IOItem>
+              </Input>
+              <Output>
+                <IOItem>
+                  <IOItemDefinition Name="PrunedMatrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+                  <MappedTo>MatrixBot20</MappedTo>
+                </IOItem>
+              </Output>
+            </IOSpec>
+            <ConfigWrapper Version="1" IsJava="False">
+              <ConfigValues>
+                <PropertyObject>
+                  <Version>3</Version>
+                  <Name>Percentage</Name>
+                  <DisplayName>Percentage</DisplayName>
+                  <Description />
+                  <ValueType>System.Double, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+                  <Visible>True</Visible>
+                  <IsEnum>False</IsEnum>
+                  <Value IsNull="False">
+                    <double>0.2</double>
+                  </Value>
+                </PropertyObject>
+              </ConfigValues>
+            </ConfigWrapper>
+          </Metadata>
+        </SerializedVertexData>
+      </node>
+      <node id="93dc0a59-2197-4da2-a119-77b1814d2d98">
+        <SerializedVertexData Version="1" X="288.5" Y="322">
+          <Metadata type="TraceLab.Core.Components.ComponentMetadata, TraceLab.Core, Culture=neutral, PublicKeyToken=2c83cea59a8bb151" Label="Remove Bottom 30%" ComponentMetadataDefinitionID="ea876e3c-9ee1-50d9-a00f-37dc3bcb9260" WaitsForAllPredecessors="True">
+            <IOSpec Version="2">
+              <Input>
+                <IOItem>
+                  <IOItemDefinition Name="Matrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>Matrix</MappedTo>
+                </IOItem>
+              </Input>
+              <Output>
+                <IOItem>
+                  <IOItemDefinition Name="PrunedMatrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+                  <MappedTo>MatrixBot30</MappedTo>
+                </IOItem>
+              </Output>
+            </IOSpec>
+            <ConfigWrapper Version="1" IsJava="False">
+              <ConfigValues>
+                <PropertyObject>
+                  <Version>3</Version>
+                  <Name>Percentage</Name>
+                  <DisplayName>Percentage</DisplayName>
+                  <Description />
+                  <ValueType>System.Double, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+                  <Visible>True</Visible>
+                  <IsEnum>False</IsEnum>
+                  <Value IsNull="False">
+                    <double>0.3</double>
+                  </Value>
+                </PropertyObject>
+              </ConfigValues>
+            </ConfigWrapper>
+          </Metadata>
+        </SerializedVertexData>
+      </node>
+      <node id="d71154fe-e269-430d-b415-cec76b095656">
+        <SerializedVertexData Version="1" X="288.5" Y="355">
+          <Metadata type="TraceLab.Core.Components.ComponentMetadata, TraceLab.Core, Culture=neutral, PublicKeyToken=2c83cea59a8bb151" Label="Remove Bottom 40%" ComponentMetadataDefinitionID="ea876e3c-9ee1-50d9-a00f-37dc3bcb9260" WaitsForAllPredecessors="True">
+            <IOSpec Version="2">
+              <Input>
+                <IOItem>
+                  <IOItemDefinition Name="Matrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>Matrix</MappedTo>
+                </IOItem>
+              </Input>
+              <Output>
+                <IOItem>
+                  <IOItemDefinition Name="PrunedMatrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+                  <MappedTo>MatrixBot40</MappedTo>
+                </IOItem>
+              </Output>
+            </IOSpec>
+            <ConfigWrapper Version="1" IsJava="False">
+              <ConfigValues>
+                <PropertyObject>
+                  <Version>3</Version>
+                  <Name>Percentage</Name>
+                  <DisplayName>Percentage</DisplayName>
+                  <Description />
+                  <ValueType>System.Double, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+                  <Visible>True</Visible>
+                  <IsEnum>False</IsEnum>
+                  <Value IsNull="False">
+                    <double>0.4</double>
+                  </Value>
+                </PropertyObject>
+              </ConfigValues>
+            </ConfigWrapper>
+          </Metadata>
+        </SerializedVertexData>
+      </node>
+      <node id="6f51c0d4-85cd-4dab-b0fe-a3b4bd72d1af">
+        <SerializedVertexData Version="1" X="289.5" Y="388">
+          <Metadata type="TraceLab.Core.Components.ComponentMetadata, TraceLab.Core, Culture=neutral, PublicKeyToken=2c83cea59a8bb151" Label="Remove Bottom 50%" ComponentMetadataDefinitionID="ea876e3c-9ee1-50d9-a00f-37dc3bcb9260" WaitsForAllPredecessors="True">
+            <IOSpec Version="2">
+              <Input>
+                <IOItem>
+                  <IOItemDefinition Name="Matrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>Matrix</MappedTo>
+                </IOItem>
+              </Input>
+              <Output>
+                <IOItem>
+                  <IOItemDefinition Name="PrunedMatrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+                  <MappedTo>MatrixBot50</MappedTo>
+                </IOItem>
+              </Output>
+            </IOSpec>
+            <ConfigWrapper Version="1" IsJava="False">
+              <ConfigValues>
+                <PropertyObject>
+                  <Version>3</Version>
+                  <Name>Percentage</Name>
+                  <DisplayName>Percentage</DisplayName>
+                  <Description />
+                  <ValueType>System.Double, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+                  <Visible>True</Visible>
+                  <IsEnum>False</IsEnum>
+                  <Value IsNull="False">
+                    <double>0.5</double>
+                  </Value>
+                </PropertyObject>
+              </ConfigValues>
+            </ConfigWrapper>
+          </Metadata>
+        </SerializedVertexData>
+      </node>
+      <node id="99608cfa-bfe8-44c9-adf8-4dd84d7e9f06">
+        <SerializedVertexData Version="1" X="289.5" Y="420">
+          <Metadata type="TraceLab.Core.Components.ComponentMetadata, TraceLab.Core, Culture=neutral, PublicKeyToken=2c83cea59a8bb151" Label="Remove Bottom 60%" ComponentMetadataDefinitionID="ea876e3c-9ee1-50d9-a00f-37dc3bcb9260" WaitsForAllPredecessors="True">
+            <IOSpec Version="2">
+              <Input>
+                <IOItem>
+                  <IOItemDefinition Name="Matrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>Matrix</MappedTo>
+                </IOItem>
+              </Input>
+              <Output>
+                <IOItem>
+                  <IOItemDefinition Name="PrunedMatrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+                  <MappedTo>MatrixBot60</MappedTo>
+                </IOItem>
+              </Output>
+            </IOSpec>
+            <ConfigWrapper Version="1" IsJava="False">
+              <ConfigValues>
+                <PropertyObject>
+                  <Version>3</Version>
+                  <Name>Percentage</Name>
+                  <DisplayName>Percentage</DisplayName>
+                  <Description />
+                  <ValueType>System.Double, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+                  <Visible>True</Visible>
+                  <IsEnum>False</IsEnum>
+                  <Value IsNull="False">
+                    <double>0.6</double>
+                  </Value>
+                </PropertyObject>
+              </ConfigValues>
+            </ConfigWrapper>
+          </Metadata>
+        </SerializedVertexData>
+      </node>
+      <node id="1afdb1c0-ca25-478f-b2cb-bfba1aa8c8c4">
+        <SerializedVertexData Version="1" X="289.5" Y="452">
+          <Metadata type="TraceLab.Core.Components.ComponentMetadata, TraceLab.Core, Culture=neutral, PublicKeyToken=2c83cea59a8bb151" Label="Remove Bottom 70%" ComponentMetadataDefinitionID="ea876e3c-9ee1-50d9-a00f-37dc3bcb9260" WaitsForAllPredecessors="True">
+            <IOSpec Version="2">
+              <Input>
+                <IOItem>
+                  <IOItemDefinition Name="Matrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>Matrix</MappedTo>
+                </IOItem>
+              </Input>
+              <Output>
+                <IOItem>
+                  <IOItemDefinition Name="PrunedMatrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+                  <MappedTo>MatrixBot70</MappedTo>
+                </IOItem>
+              </Output>
+            </IOSpec>
+            <ConfigWrapper Version="1" IsJava="False">
+              <ConfigValues>
+                <PropertyObject>
+                  <Version>3</Version>
+                  <Name>Percentage</Name>
+                  <DisplayName>Percentage</DisplayName>
+                  <Description />
+                  <ValueType>System.Double, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+                  <Visible>True</Visible>
+                  <IsEnum>False</IsEnum>
+                  <Value IsNull="False">
+                    <double>0.7</double>
+                  </Value>
+                </PropertyObject>
+              </ConfigValues>
+            </ConfigWrapper>
+          </Metadata>
+        </SerializedVertexData>
+      </node>
+      <node id="e70310f0-166f-42cf-8a81-10aff7cbc7eb">
+        <SerializedVertexData Version="1" X="288.5" Y="485">
+          <Metadata type="TraceLab.Core.Components.ComponentMetadata, TraceLab.Core, Culture=neutral, PublicKeyToken=2c83cea59a8bb151" Label="Remove Bottom 80%" ComponentMetadataDefinitionID="ea876e3c-9ee1-50d9-a00f-37dc3bcb9260" WaitsForAllPredecessors="True">
+            <IOSpec Version="2">
+              <Input>
+                <IOItem>
+                  <IOItemDefinition Name="Matrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>Matrix</MappedTo>
+                </IOItem>
+              </Input>
+              <Output>
+                <IOItem>
+                  <IOItemDefinition Name="PrunedMatrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+                  <MappedTo>MatrixBot80</MappedTo>
+                </IOItem>
+              </Output>
+            </IOSpec>
+            <ConfigWrapper Version="1" IsJava="False">
+              <ConfigValues>
+                <PropertyObject>
+                  <Version>3</Version>
+                  <Name>Percentage</Name>
+                  <DisplayName>Percentage</DisplayName>
+                  <Description />
+                  <ValueType>System.Double, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+                  <Visible>True</Visible>
+                  <IsEnum>False</IsEnum>
+                  <Value IsNull="False">
+                    <double>0.8</double>
+                  </Value>
+                </PropertyObject>
+              </ConfigValues>
+            </ConfigWrapper>
+          </Metadata>
+        </SerializedVertexData>
+      </node>
+      <node id="caaa3ed2-8eda-49f9-85f2-4937b297c34d">
+        <SerializedVertexData Version="1" X="287.5" Y="518">
+          <Metadata type="TraceLab.Core.Components.ComponentMetadata, TraceLab.Core, Culture=neutral, PublicKeyToken=2c83cea59a8bb151" Label="Remove Bottom 90%" ComponentMetadataDefinitionID="ea876e3c-9ee1-50d9-a00f-37dc3bcb9260" WaitsForAllPredecessors="True">
+            <IOSpec Version="2">
+              <Input>
+                <IOItem>
+                  <IOItemDefinition Name="Matrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>Matrix</MappedTo>
+                </IOItem>
+              </Input>
+              <Output>
+                <IOItem>
+                  <IOItemDefinition Name="PrunedMatrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+                  <MappedTo>MatrixBot90</MappedTo>
+                </IOItem>
+              </Output>
+            </IOSpec>
+            <ConfigWrapper Version="1" IsJava="False">
+              <ConfigValues>
+                <PropertyObject>
+                  <Version>3</Version>
+                  <Name>Percentage</Name>
+                  <DisplayName>Percentage</DisplayName>
+                  <Description />
+                  <ValueType>System.Double, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+                  <Visible>True</Visible>
+                  <IsEnum>False</IsEnum>
+                  <Value IsNull="False">
+                    <double>0.9</double>
+                  </Value>
+                </PropertyObject>
+              </ConfigValues>
+            </ConfigWrapper>
+          </Metadata>
+        </SerializedVertexData>
+      </node>
+      <node id="Start">
+        <SerializedVertexData Version="1" X="200" Y="200">
+          <Metadata type="TraceLab.Core.Components.StartNodeMetadata, TraceLab.Core, Culture=neutral, PublicKeyToken=2c83cea59a8bb151" Label="Start" />
+        </SerializedVertexData>
+      </node>
+      <node id="End">
+        <SerializedVertexData Version="1" X="200" Y="568">
+          <Metadata type="TraceLab.Core.Components.EndNodeMetadata, TraceLab.Core, Culture=neutral, PublicKeyToken=2c83cea59a8bb151" Label="End" WaitsForAllPredecessors="True" />
+        </SerializedVertexData>
+      </node>
+      <edge id="f014e41a-41c2-49c1-a273-bd99d564bfad" source="9dfa3483-acb7-4173-bb4c-4d063eba2104" target="End" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="1dcc3cf9-e71e-42f5-a02e-932ede5910a7" source="8cdfa976-f123-4978-8f7e-bf1891cbfe0e" target="End" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="6040ed63-7039-48e9-8e64-acdee2ad095e" source="e0c4de01-1174-45ee-b493-bec2533554f6" target="End" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="51589be2-c419-48e7-aabd-3a4a6aade26d" source="0f4f6896-cd15-4574-b0e8-6f4c56c77fd4" target="End" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="187f8a76-1663-460c-92ce-6c32172cc4e8" source="8ed05e31-0550-48b5-a9f0-2d54769a3b6d" target="End" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="8086c0ad-910e-4adc-8674-29f21255be8d" source="19b5fe61-779d-4866-a425-5275fdaf7def" target="End" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="ea4b5671-bdd6-42e7-9569-f164795bae01" source="0183bcf9-7154-4b2d-9663-eff4cee5036b" target="End" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="b188a3a2-4a9f-40c3-9866-4d94dd602933" source="ae25b13b-591b-45d1-9e47-699bf0c75d2d" target="End" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="ebddebf2-8fa7-4f56-aa47-bc97d9b233bd" source="a390489c-661d-449f-bbd5-3c48818181b5" target="End" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="15e5fccd-8d07-43dc-8891-ad01bb66836e" source="e20133cf-128a-4f42-8b7e-f973f0f1825f" target="End" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="311c70b0-79cd-48e0-b807-4a4a981825b0" source="317e56c1-3901-49d5-a70b-ad537010562a" target="End" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="42c8f6c3-5e23-4e5d-9d3c-d575dbded523" source="93dc0a59-2197-4da2-a119-77b1814d2d98" target="End" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="18e83270-b0f4-4e0d-bead-fc559ed31ad5" source="d71154fe-e269-430d-b415-cec76b095656" target="End" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="96dec6f1-1a3e-42f6-a5da-deb8236f5c4d" source="6f51c0d4-85cd-4dab-b0fe-a3b4bd72d1af" target="End" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="541dd93d-4324-498e-8edb-d07fb2b72d5d" source="99608cfa-bfe8-44c9-adf8-4dd84d7e9f06" target="End" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="d51b5fc7-03d8-4185-86db-1488b642c541" source="1afdb1c0-ca25-478f-b2cb-bfba1aa8c8c4" target="End" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="beeb33fe-552d-41c1-82c9-3897dd3fec74" source="e70310f0-166f-42cf-8a81-10aff7cbc7eb" target="End" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="5c7efe1a-68bf-4de6-b282-545e8e651266" source="caaa3ed2-8eda-49f9-85f2-4937b297c34d" target="End" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="751cbbb5-9743-440b-809a-2a7771bd8024" source="Start" target="9dfa3483-acb7-4173-bb4c-4d063eba2104" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="5aff7f4d-1ab0-46e6-9ba2-f88acb783552" source="Start" target="8cdfa976-f123-4978-8f7e-bf1891cbfe0e" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="e7c2a53b-0d06-40f5-8529-20fd056c70a2" source="Start" target="e0c4de01-1174-45ee-b493-bec2533554f6" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="0a48ff5d-cd8f-4825-acbd-545a7ced0871" source="Start" target="0f4f6896-cd15-4574-b0e8-6f4c56c77fd4" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="0f9ed4f0-bb08-428d-82f1-f247ae22cc30" source="Start" target="8ed05e31-0550-48b5-a9f0-2d54769a3b6d" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="706e6691-7693-4933-9b79-34b89695c8b9" source="Start" target="19b5fe61-779d-4866-a425-5275fdaf7def" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="2361bbae-adc4-49ad-af21-080dbcac7558" source="Start" target="0183bcf9-7154-4b2d-9663-eff4cee5036b" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="19fd05c2-805e-4677-997b-89209291c206" source="Start" target="ae25b13b-591b-45d1-9e47-699bf0c75d2d" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="8fc4ea84-9e5c-432f-9e70-661467a6a279" source="Start" target="a390489c-661d-449f-bbd5-3c48818181b5" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="f602e228-e086-4260-b759-d49d0840e088" source="Start" target="e20133cf-128a-4f42-8b7e-f973f0f1825f" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="0265ed40-bc4c-4f25-b658-1a00c0ca2c8b" source="Start" target="317e56c1-3901-49d5-a70b-ad537010562a" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="40793ca7-35df-4d57-ac1a-287494964c7e" source="Start" target="93dc0a59-2197-4da2-a119-77b1814d2d98" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="15825dec-bfed-456b-9e04-0f93795071ed" source="Start" target="d71154fe-e269-430d-b415-cec76b095656" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="3e4d0111-0f6a-48c8-be34-a52031ef9622" source="Start" target="6f51c0d4-85cd-4dab-b0fe-a3b4bd72d1af" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="f4d64989-d278-49b1-be93-6803cfa5fe1f" source="Start" target="99608cfa-bfe8-44c9-adf8-4dd84d7e9f06" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="7882f428-2614-410b-969b-fa63f73dce4e" source="Start" target="1afdb1c0-ca25-478f-b2cb-bfba1aa8c8c4" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="6e5a89e9-1a8e-49c0-b260-7d05db05d3fe" source="Start" target="e70310f0-166f-42cf-8a81-10aff7cbc7eb" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="ee9abe81-55c8-4b4e-a58b-9235addc8b92" source="Start" target="caaa3ed2-8eda-49f9-85f2-4937b297c34d" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+    </graph>
+  </ComponentGraph>
+</CompositeComponentMetadataDefinition>

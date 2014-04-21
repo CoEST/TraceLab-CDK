@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="TraceLab.Components.RPlugin.Tests.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="RScriptEXE" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\Program Files\R\R-2.15.2\bin\RScript.exe</Value>
+    </Setting>
+    <Setting Name="DoublePrecision" Type="System.Double" Scope="Application">
+      <Value Profile="(Default)">1E-06</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

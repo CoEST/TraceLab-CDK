@@ -1,0 +1,21 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="RPlugin.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="TempPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">RPlugin</Value>
+    </Setting>
+    <Setting Name="TempCache" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">cache</Value>
+    </Setting>
+    <Setting Name="TempScripts" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">scripts</Value>
+    </Setting>
+    <Setting Name="Resources" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">RPlugin.Resources.</Value>
+    </Setting>
+    <Setting Name="DoublePrecision" Type="System.Double" Scope="Application">
+      <Value Profile="(Default)">1E-06</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,0 +1,4 @@
+ a b c d e f g h
+ISSUE1 0 0 0 1 0 0 2 0
+ISSUE2 0 0 0 2 0 0 1 0
+ISSUE3 0 0 0 1 0 0 1 0

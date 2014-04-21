@@ -1,0 +1,1173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CompositeComponentMetadataDefinition xmlVersion="2">
+  <Info>
+    <ID>0d97236d-741a-43ff-9cf2-5b7c693bb0c6</ID>
+    <Version>1.0.0.0</Version>
+    <Label>2013.EMSE.Dit - Metrics computation</Label>
+    <Name>2013.EMSE.Dit - Metrics computation</Name>
+    <Author>SEMERU; Evan Moritz</Author>
+    <Description />
+  </Info>
+  <Input>
+    <IOItemDefinition Name="AnswerMatrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+    <IOItemDefinition Name="PRbot10" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+    <IOItemDefinition Name="PRbot20" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+    <IOItemDefinition Name="PRbot30" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+    <IOItemDefinition Name="PRbot40" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+    <IOItemDefinition Name="PRbot50" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+    <IOItemDefinition Name="PRbot60" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+    <IOItemDefinition Name="PRbot70" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+    <IOItemDefinition Name="PRbot80" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+    <IOItemDefinition Name="PRbot90" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+  </Input>
+  <Output />
+  <ConfigDefinition>
+    <IsJava>False</IsJava>
+    <ConfigProperties>
+      <PropertyObject>
+        <Version>3</Version>
+        <Name>2aeba9c3-eb67-477a-b8cf-6df5571b7a8e:DatasetName</Name>
+        <DisplayName>bot 10 metrics Dataset name</DisplayName>
+        <Description>The name of the dataset used to compute the results.</Description>
+        <ValueType>System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+        <Visible>True</Visible>
+        <IsEnum>False</IsEnum>
+        <Value IsNull="False">
+          <string />
+        </Value>
+      </PropertyObject>
+      <PropertyObject>
+        <Version>3</Version>
+        <Name>2aeba9c3-eb67-477a-b8cf-6df5571b7a8e:EffectivenessAllMeasure</Name>
+        <DisplayName>bot 10 metrics Effectiveness All Measure</DisplayName>
+        <Description />
+        <ValueType>System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+        <Visible>True</Visible>
+        <IsEnum>False</IsEnum>
+        <Value IsNull="False">
+          <boolean>false</boolean>
+        </Value>
+      </PropertyObject>
+      <PropertyObject>
+        <Version>3</Version>
+        <Name>2aeba9c3-eb67-477a-b8cf-6df5571b7a8e:EffectivenessBestMeasure</Name>
+        <DisplayName>bot 10 metrics Effectiveness Best Measure</DisplayName>
+        <Description />
+        <ValueType>System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+        <Visible>True</Visible>
+        <IsEnum>False</IsEnum>
+        <Value IsNull="False">
+          <boolean>false</boolean>
+        </Value>
+      </PropertyObject>
+      <PropertyObject>
+        <Version>3</Version>
+        <Name>2aeba9c3-eb67-477a-b8cf-6df5571b7a8e:TechniqueName</Name>
+        <DisplayName>bot 10 metrics Technique name</DisplayName>
+        <Description>The name of the technique used to compute the results.</Description>
+        <ValueType>System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+        <Visible>True</Visible>
+        <IsEnum>False</IsEnum>
+        <Value IsNull="False">
+          <string />
+        </Value>
+      </PropertyObject>
+      <PropertyObject>
+        <Version>3</Version>
+        <Name>a869905e-fe58-4e5d-95db-619477155617:DatasetName</Name>
+        <DisplayName>bot 20 metrics Dataset name</DisplayName>
+        <Description>The name of the dataset used to compute the results.</Description>
+        <ValueType>System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+        <Visible>True</Visible>
+        <IsEnum>False</IsEnum>
+        <Value IsNull="False">
+          <string />
+        </Value>
+      </PropertyObject>
+      <PropertyObject>
+        <Version>3</Version>
+        <Name>a869905e-fe58-4e5d-95db-619477155617:EffectivenessAllMeasure</Name>
+        <DisplayName>bot 20 metrics Effectiveness All Measure</DisplayName>
+        <Description />
+        <ValueType>System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+        <Visible>True</Visible>
+        <IsEnum>False</IsEnum>
+        <Value IsNull="False">
+          <boolean>false</boolean>
+        </Value>
+      </PropertyObject>
+      <PropertyObject>
+        <Version>3</Version>
+        <Name>a869905e-fe58-4e5d-95db-619477155617:EffectivenessBestMeasure</Name>
+        <DisplayName>bot 20 metrics Effectiveness Best Measure</DisplayName>
+        <Description />
+        <ValueType>System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+        <Visible>True</Visible>
+        <IsEnum>False</IsEnum>
+        <Value IsNull="False">
+          <boolean>false</boolean>
+        </Value>
+      </PropertyObject>
+      <PropertyObject>
+        <Version>3</Version>
+        <Name>a869905e-fe58-4e5d-95db-619477155617:TechniqueName</Name>
+        <DisplayName>bot 20 metrics Technique name</DisplayName>
+        <Description>The name of the technique used to compute the results.</Description>
+        <ValueType>System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+        <Visible>True</Visible>
+        <IsEnum>False</IsEnum>
+        <Value IsNull="False">
+          <string />
+        </Value>
+      </PropertyObject>
+      <PropertyObject>
+        <Version>3</Version>
+        <Name>19af46c0-77bc-4104-bb05-b29613350a19:DatasetName</Name>
+        <DisplayName>bot 30 metrics Dataset name</DisplayName>
+        <Description>The name of the dataset used to compute the results.</Description>
+        <ValueType>System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+        <Visible>True</Visible>
+        <IsEnum>False</IsEnum>
+        <Value IsNull="False">
+          <string />
+        </Value>
+      </PropertyObject>
+      <PropertyObject>
+        <Version>3</Version>
+        <Name>19af46c0-77bc-4104-bb05-b29613350a19:EffectivenessAllMeasure</Name>
+        <DisplayName>bot 30 metrics Effectiveness All Measure</DisplayName>
+        <Description />
+        <ValueType>System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+        <Visible>True</Visible>
+        <IsEnum>False</IsEnum>
+        <Value IsNull="False">
+          <boolean>false</boolean>
+        </Value>
+      </PropertyObject>
+      <PropertyObject>
+        <Version>3</Version>
+        <Name>19af46c0-77bc-4104-bb05-b29613350a19:EffectivenessBestMeasure</Name>
+        <DisplayName>bot 30 metrics Effectiveness Best Measure</DisplayName>
+        <Description />
+        <ValueType>System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+        <Visible>True</Visible>
+        <IsEnum>False</IsEnum>
+        <Value IsNull="False">
+          <boolean>false</boolean>
+        </Value>
+      </PropertyObject>
+      <PropertyObject>
+        <Version>3</Version>
+        <Name>19af46c0-77bc-4104-bb05-b29613350a19:TechniqueName</Name>
+        <DisplayName>bot 30 metrics Technique name</DisplayName>
+        <Description>The name of the technique used to compute the results.</Description>
+        <ValueType>System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+        <Visible>True</Visible>
+        <IsEnum>False</IsEnum>
+        <Value IsNull="False">
+          <string />
+        </Value>
+      </PropertyObject>
+      <PropertyObject>
+        <Version>3</Version>
+        <Name>b1c5bea6-180a-46d7-9592-c657b91c55b0:DatasetName</Name>
+        <DisplayName>bot 40 metrics Dataset name</DisplayName>
+        <Description>The name of the dataset used to compute the results.</Description>
+        <ValueType>System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+        <Visible>True</Visible>
+        <IsEnum>False</IsEnum>
+        <Value IsNull="False">
+          <string />
+        </Value>
+      </PropertyObject>
+      <PropertyObject>
+        <Version>3</Version>
+        <Name>b1c5bea6-180a-46d7-9592-c657b91c55b0:EffectivenessAllMeasure</Name>
+        <DisplayName>bot 40 metrics Effectiveness All Measure</DisplayName>
+        <Description />
+        <ValueType>System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+        <Visible>True</Visible>
+        <IsEnum>False</IsEnum>
+        <Value IsNull="False">
+          <boolean>false</boolean>
+        </Value>
+      </PropertyObject>
+      <PropertyObject>
+        <Version>3</Version>
+        <Name>b1c5bea6-180a-46d7-9592-c657b91c55b0:EffectivenessBestMeasure</Name>
+        <DisplayName>bot 40 metrics Effectiveness Best Measure</DisplayName>
+        <Description />
+        <ValueType>System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+        <Visible>True</Visible>
+        <IsEnum>False</IsEnum>
+        <Value IsNull="False">
+          <boolean>false</boolean>
+        </Value>
+      </PropertyObject>
+      <PropertyObject>
+        <Version>3</Version>
+        <Name>b1c5bea6-180a-46d7-9592-c657b91c55b0:TechniqueName</Name>
+        <DisplayName>bot 40 metrics Technique name</DisplayName>
+        <Description>The name of the technique used to compute the results.</Description>
+        <ValueType>System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+        <Visible>True</Visible>
+        <IsEnum>False</IsEnum>
+        <Value IsNull="False">
+          <string />
+        </Value>
+      </PropertyObject>
+      <PropertyObject>
+        <Version>3</Version>
+        <Name>da2e25a6-f885-41b8-bc38-2b54a2c9ae81:DatasetName</Name>
+        <DisplayName>bot 50 metrics Dataset name</DisplayName>
+        <Description>The name of the dataset used to compute the results.</Description>
+        <ValueType>System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+        <Visible>True</Visible>
+        <IsEnum>False</IsEnum>
+        <Value IsNull="False">
+          <string />
+        </Value>
+      </PropertyObject>
+      <PropertyObject>
+        <Version>3</Version>
+        <Name>da2e25a6-f885-41b8-bc38-2b54a2c9ae81:EffectivenessAllMeasure</Name>
+        <DisplayName>bot 50 metrics Effectiveness All Measure</DisplayName>
+        <Description />
+        <ValueType>System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+        <Visible>True</Visible>
+        <IsEnum>False</IsEnum>
+        <Value IsNull="False">
+          <boolean>false</boolean>
+        </Value>
+      </PropertyObject>
+      <PropertyObject>
+        <Version>3</Version>
+        <Name>da2e25a6-f885-41b8-bc38-2b54a2c9ae81:EffectivenessBestMeasure</Name>
+        <DisplayName>bot 50 metrics Effectiveness Best Measure</DisplayName>
+        <Description />
+        <ValueType>System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+        <Visible>True</Visible>
+        <IsEnum>False</IsEnum>
+        <Value IsNull="False">
+          <boolean>false</boolean>
+        </Value>
+      </PropertyObject>
+      <PropertyObject>
+        <Version>3</Version>
+        <Name>da2e25a6-f885-41b8-bc38-2b54a2c9ae81:TechniqueName</Name>
+        <DisplayName>bot 50 metrics Technique name</DisplayName>
+        <Description>The name of the technique used to compute the results.</Description>
+        <ValueType>System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+        <Visible>True</Visible>
+        <IsEnum>False</IsEnum>
+        <Value IsNull="False">
+          <string />
+        </Value>
+      </PropertyObject>
+      <PropertyObject>
+        <Version>3</Version>
+        <Name>b50ac160-9a58-4b1f-8c81-939b63b42ab8:DatasetName</Name>
+        <DisplayName>bot 60 metrics Dataset name</DisplayName>
+        <Description>The name of the dataset used to compute the results.</Description>
+        <ValueType>System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+        <Visible>True</Visible>
+        <IsEnum>False</IsEnum>
+        <Value IsNull="False">
+          <string />
+        </Value>
+      </PropertyObject>
+      <PropertyObject>
+        <Version>3</Version>
+        <Name>b50ac160-9a58-4b1f-8c81-939b63b42ab8:EffectivenessAllMeasure</Name>
+        <DisplayName>bot 60 metrics Effectiveness All Measure</DisplayName>
+        <Description />
+        <ValueType>System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+        <Visible>True</Visible>
+        <IsEnum>False</IsEnum>
+        <Value IsNull="False">
+          <boolean>false</boolean>
+        </Value>
+      </PropertyObject>
+      <PropertyObject>
+        <Version>3</Version>
+        <Name>b50ac160-9a58-4b1f-8c81-939b63b42ab8:EffectivenessBestMeasure</Name>
+        <DisplayName>bot 60 metrics Effectiveness Best Measure</DisplayName>
+        <Description />
+        <ValueType>System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+        <Visible>True</Visible>
+        <IsEnum>False</IsEnum>
+        <Value IsNull="False">
+          <boolean>false</boolean>
+        </Value>
+      </PropertyObject>
+      <PropertyObject>
+        <Version>3</Version>
+        <Name>b50ac160-9a58-4b1f-8c81-939b63b42ab8:TechniqueName</Name>
+        <DisplayName>bot 60 metrics Technique name</DisplayName>
+        <Description>The name of the technique used to compute the results.</Description>
+        <ValueType>System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+        <Visible>True</Visible>
+        <IsEnum>False</IsEnum>
+        <Value IsNull="False">
+          <string />
+        </Value>
+      </PropertyObject>
+      <PropertyObject>
+        <Version>3</Version>
+        <Name>f4509474-1463-46f5-9139-45f653a58068:DatasetName</Name>
+        <DisplayName>bot 70 metrics Dataset name</DisplayName>
+        <Description>The name of the dataset used to compute the results.</Description>
+        <ValueType>System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+        <Visible>True</Visible>
+        <IsEnum>False</IsEnum>
+        <Value IsNull="False">
+          <string />
+        </Value>
+      </PropertyObject>
+      <PropertyObject>
+        <Version>3</Version>
+        <Name>f4509474-1463-46f5-9139-45f653a58068:EffectivenessAllMeasure</Name>
+        <DisplayName>bot 70 metrics Effectiveness All Measure</DisplayName>
+        <Description />
+        <ValueType>System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+        <Visible>True</Visible>
+        <IsEnum>False</IsEnum>
+        <Value IsNull="False">
+          <boolean>false</boolean>
+        </Value>
+      </PropertyObject>
+      <PropertyObject>
+        <Version>3</Version>
+        <Name>f4509474-1463-46f5-9139-45f653a58068:EffectivenessBestMeasure</Name>
+        <DisplayName>bot 70 metrics Effectiveness Best Measure</DisplayName>
+        <Description />
+        <ValueType>System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+        <Visible>True</Visible>
+        <IsEnum>False</IsEnum>
+        <Value IsNull="False">
+          <boolean>false</boolean>
+        </Value>
+      </PropertyObject>
+      <PropertyObject>
+        <Version>3</Version>
+        <Name>f4509474-1463-46f5-9139-45f653a58068:TechniqueName</Name>
+        <DisplayName>bot 70 metrics Technique name</DisplayName>
+        <Description>The name of the technique used to compute the results.</Description>
+        <ValueType>System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+        <Visible>True</Visible>
+        <IsEnum>False</IsEnum>
+        <Value IsNull="False">
+          <string />
+        </Value>
+      </PropertyObject>
+      <PropertyObject>
+        <Version>3</Version>
+        <Name>e5773ec3-c5d3-46de-8ed6-4dfcce6651dd:DatasetName</Name>
+        <DisplayName>bot 80 metrics Dataset name</DisplayName>
+        <Description>The name of the dataset used to compute the results.</Description>
+        <ValueType>System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+        <Visible>True</Visible>
+        <IsEnum>False</IsEnum>
+        <Value IsNull="False">
+          <string />
+        </Value>
+      </PropertyObject>
+      <PropertyObject>
+        <Version>3</Version>
+        <Name>e5773ec3-c5d3-46de-8ed6-4dfcce6651dd:EffectivenessAllMeasure</Name>
+        <DisplayName>bot 80 metrics Effectiveness All Measure</DisplayName>
+        <Description />
+        <ValueType>System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+        <Visible>True</Visible>
+        <IsEnum>False</IsEnum>
+        <Value IsNull="False">
+          <boolean>false</boolean>
+        </Value>
+      </PropertyObject>
+      <PropertyObject>
+        <Version>3</Version>
+        <Name>e5773ec3-c5d3-46de-8ed6-4dfcce6651dd:EffectivenessBestMeasure</Name>
+        <DisplayName>bot 80 metrics Effectiveness Best Measure</DisplayName>
+        <Description />
+        <ValueType>System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+        <Visible>True</Visible>
+        <IsEnum>False</IsEnum>
+        <Value IsNull="False">
+          <boolean>false</boolean>
+        </Value>
+      </PropertyObject>
+      <PropertyObject>
+        <Version>3</Version>
+        <Name>e5773ec3-c5d3-46de-8ed6-4dfcce6651dd:TechniqueName</Name>
+        <DisplayName>bot 80 metrics Technique name</DisplayName>
+        <Description>The name of the technique used to compute the results.</Description>
+        <ValueType>System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+        <Visible>True</Visible>
+        <IsEnum>False</IsEnum>
+        <Value IsNull="False">
+          <string />
+        </Value>
+      </PropertyObject>
+      <PropertyObject>
+        <Version>3</Version>
+        <Name>c05c60c9-44de-4779-a139-c729dabf7afc:DatasetName</Name>
+        <DisplayName>bot 90 metrics Dataset name</DisplayName>
+        <Description>The name of the dataset used to compute the results.</Description>
+        <ValueType>System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+        <Visible>True</Visible>
+        <IsEnum>False</IsEnum>
+        <Value IsNull="False">
+          <string />
+        </Value>
+      </PropertyObject>
+      <PropertyObject>
+        <Version>3</Version>
+        <Name>c05c60c9-44de-4779-a139-c729dabf7afc:EffectivenessAllMeasure</Name>
+        <DisplayName>bot 90 metrics Effectiveness All Measure</DisplayName>
+        <Description />
+        <ValueType>System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+        <Visible>True</Visible>
+        <IsEnum>False</IsEnum>
+        <Value IsNull="False">
+          <boolean>false</boolean>
+        </Value>
+      </PropertyObject>
+      <PropertyObject>
+        <Version>3</Version>
+        <Name>c05c60c9-44de-4779-a139-c729dabf7afc:EffectivenessBestMeasure</Name>
+        <DisplayName>bot 90 metrics Effectiveness Best Measure</DisplayName>
+        <Description />
+        <ValueType>System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+        <Visible>True</Visible>
+        <IsEnum>False</IsEnum>
+        <Value IsNull="False">
+          <boolean>false</boolean>
+        </Value>
+      </PropertyObject>
+      <PropertyObject>
+        <Version>3</Version>
+        <Name>c05c60c9-44de-4779-a139-c729dabf7afc:TechniqueName</Name>
+        <DisplayName>bot 90 metrics Technique name</DisplayName>
+        <Description>The name of the technique used to compute the results.</Description>
+        <ValueType>System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+        <Visible>True</Visible>
+        <IsEnum>False</IsEnum>
+        <Value IsNull="False">
+          <string />
+        </Value>
+      </PropertyObject>
+    </ConfigProperties>
+  </ConfigDefinition>
+  <ComponentGraph>
+    <graph>
+      <References />
+      <ExperimentInfo>
+        <Version>2</Version>
+        <Id>9e6ce971-ece7-43ef-be48-8a5a88ed770f</Id>
+      </ExperimentInfo>
+      <node id="2aeba9c3-eb67-477a-b8cf-6df5571b7a8e">
+        <SerializedVertexData Version="1" X="192.5" Y="250">
+          <Metadata type="TraceLab.Core.Components.ComponentMetadata, TraceLab.Core, Culture=neutral, PublicKeyToken=2c83cea59a8bb151" Label="bot 10 metrics" ComponentMetadataDefinitionID="2281c73a-c861-52f0-981c-d222fba900c6" WaitsForAllPredecessors="True">
+            <IOSpec Version="2">
+              <Input>
+                <IOItem>
+                  <IOItemDefinition Name="CandidateMatrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>PRbot10</MappedTo>
+                </IOItem>
+                <IOItem>
+                  <IOItemDefinition Name="AnswerMatrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>AnswerMatrix</MappedTo>
+                </IOItem>
+              </Input>
+              <Output />
+            </IOSpec>
+            <ConfigWrapper Version="1" IsJava="False">
+              <ConfigValues>
+                <PropertyObject>
+                  <Version>3</Version>
+                  <Name>EffectivenessBestMeasure</Name>
+                  <DisplayName>Effectiveness Best Measure</DisplayName>
+                  <Description />
+                  <ValueType>System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+                  <Visible>True</Visible>
+                  <IsEnum>False</IsEnum>
+                  <Value IsNull="False">
+                    <boolean>false</boolean>
+                  </Value>
+                </PropertyObject>
+                <PropertyObject>
+                  <Version>3</Version>
+                  <Name>EffectivenessAllMeasure</Name>
+                  <DisplayName>Effectiveness All Measure</DisplayName>
+                  <Description />
+                  <ValueType>System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+                  <Visible>True</Visible>
+                  <IsEnum>False</IsEnum>
+                  <Value IsNull="False">
+                    <boolean>false</boolean>
+                  </Value>
+                </PropertyObject>
+                <PropertyObject>
+                  <Version>3</Version>
+                  <Name>TechniqueName</Name>
+                  <DisplayName>Technique name</DisplayName>
+                  <Description>The name of the technique used to compute the results.</Description>
+                  <ValueType>System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+                  <Visible>True</Visible>
+                  <IsEnum>False</IsEnum>
+                  <Value IsNull="False">
+                    <string />
+                  </Value>
+                </PropertyObject>
+                <PropertyObject>
+                  <Version>3</Version>
+                  <Name>DatasetName</Name>
+                  <DisplayName>Dataset name</DisplayName>
+                  <Description>The name of the dataset used to compute the results.</Description>
+                  <ValueType>System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+                  <Visible>True</Visible>
+                  <IsEnum>False</IsEnum>
+                  <Value IsNull="False">
+                    <string />
+                  </Value>
+                </PropertyObject>
+              </ConfigValues>
+            </ConfigWrapper>
+          </Metadata>
+        </SerializedVertexData>
+      </node>
+      <node id="19af46c0-77bc-4104-bb05-b29613350a19">
+        <SerializedVertexData Version="1" X="195.5" Y="321">
+          <Metadata type="TraceLab.Core.Components.ComponentMetadata, TraceLab.Core, Culture=neutral, PublicKeyToken=2c83cea59a8bb151" Label="bot 30 metrics" ComponentMetadataDefinitionID="2281c73a-c861-52f0-981c-d222fba900c6" WaitsForAllPredecessors="True">
+            <IOSpec Version="2">
+              <Input>
+                <IOItem>
+                  <IOItemDefinition Name="CandidateMatrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>PRbot30</MappedTo>
+                </IOItem>
+                <IOItem>
+                  <IOItemDefinition Name="AnswerMatrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>AnswerMatrix</MappedTo>
+                </IOItem>
+              </Input>
+              <Output />
+            </IOSpec>
+            <ConfigWrapper Version="1" IsJava="False">
+              <ConfigValues>
+                <PropertyObject>
+                  <Version>3</Version>
+                  <Name>EffectivenessBestMeasure</Name>
+                  <DisplayName>Effectiveness Best Measure</DisplayName>
+                  <Description />
+                  <ValueType>System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+                  <Visible>True</Visible>
+                  <IsEnum>False</IsEnum>
+                  <Value IsNull="False">
+                    <boolean>false</boolean>
+                  </Value>
+                </PropertyObject>
+                <PropertyObject>
+                  <Version>3</Version>
+                  <Name>EffectivenessAllMeasure</Name>
+                  <DisplayName>Effectiveness All Measure</DisplayName>
+                  <Description />
+                  <ValueType>System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+                  <Visible>True</Visible>
+                  <IsEnum>False</IsEnum>
+                  <Value IsNull="False">
+                    <boolean>false</boolean>
+                  </Value>
+                </PropertyObject>
+                <PropertyObject>
+                  <Version>3</Version>
+                  <Name>TechniqueName</Name>
+                  <DisplayName>Technique name</DisplayName>
+                  <Description>The name of the technique used to compute the results.</Description>
+                  <ValueType>System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+                  <Visible>True</Visible>
+                  <IsEnum>False</IsEnum>
+                  <Value IsNull="False">
+                    <string />
+                  </Value>
+                </PropertyObject>
+                <PropertyObject>
+                  <Version>3</Version>
+                  <Name>DatasetName</Name>
+                  <DisplayName>Dataset name</DisplayName>
+                  <Description>The name of the dataset used to compute the results.</Description>
+                  <ValueType>System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+                  <Visible>True</Visible>
+                  <IsEnum>False</IsEnum>
+                  <Value IsNull="False">
+                    <string />
+                  </Value>
+                </PropertyObject>
+              </ConfigValues>
+            </ConfigWrapper>
+          </Metadata>
+        </SerializedVertexData>
+      </node>
+      <node id="b1c5bea6-180a-46d7-9592-c657b91c55b0">
+        <SerializedVertexData Version="1" X="197.5" Y="355">
+          <Metadata type="TraceLab.Core.Components.ComponentMetadata, TraceLab.Core, Culture=neutral, PublicKeyToken=2c83cea59a8bb151" Label="bot 40 metrics" ComponentMetadataDefinitionID="2281c73a-c861-52f0-981c-d222fba900c6" WaitsForAllPredecessors="True">
+            <IOSpec Version="2">
+              <Input>
+                <IOItem>
+                  <IOItemDefinition Name="CandidateMatrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>PRbot40</MappedTo>
+                </IOItem>
+                <IOItem>
+                  <IOItemDefinition Name="AnswerMatrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>AnswerMatrix</MappedTo>
+                </IOItem>
+              </Input>
+              <Output />
+            </IOSpec>
+            <ConfigWrapper Version="1" IsJava="False">
+              <ConfigValues>
+                <PropertyObject>
+                  <Version>3</Version>
+                  <Name>EffectivenessBestMeasure</Name>
+                  <DisplayName>Effectiveness Best Measure</DisplayName>
+                  <Description />
+                  <ValueType>System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+                  <Visible>True</Visible>
+                  <IsEnum>False</IsEnum>
+                  <Value IsNull="False">
+                    <boolean>false</boolean>
+                  </Value>
+                </PropertyObject>
+                <PropertyObject>
+                  <Version>3</Version>
+                  <Name>EffectivenessAllMeasure</Name>
+                  <DisplayName>Effectiveness All Measure</DisplayName>
+                  <Description />
+                  <ValueType>System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+                  <Visible>True</Visible>
+                  <IsEnum>False</IsEnum>
+                  <Value IsNull="False">
+                    <boolean>false</boolean>
+                  </Value>
+                </PropertyObject>
+                <PropertyObject>
+                  <Version>3</Version>
+                  <Name>TechniqueName</Name>
+                  <DisplayName>Technique name</DisplayName>
+                  <Description>The name of the technique used to compute the results.</Description>
+                  <ValueType>System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+                  <Visible>True</Visible>
+                  <IsEnum>False</IsEnum>
+                  <Value IsNull="False">
+                    <string />
+                  </Value>
+                </PropertyObject>
+                <PropertyObject>
+                  <Version>3</Version>
+                  <Name>DatasetName</Name>
+                  <DisplayName>Dataset name</DisplayName>
+                  <Description>The name of the dataset used to compute the results.</Description>
+                  <ValueType>System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+                  <Visible>True</Visible>
+                  <IsEnum>False</IsEnum>
+                  <Value IsNull="False">
+                    <string />
+                  </Value>
+                </PropertyObject>
+              </ConfigValues>
+            </ConfigWrapper>
+          </Metadata>
+        </SerializedVertexData>
+      </node>
+      <node id="da2e25a6-f885-41b8-bc38-2b54a2c9ae81">
+        <SerializedVertexData Version="1" X="200.5" Y="390">
+          <Metadata type="TraceLab.Core.Components.ComponentMetadata, TraceLab.Core, Culture=neutral, PublicKeyToken=2c83cea59a8bb151" Label="bot 50 metrics" ComponentMetadataDefinitionID="2281c73a-c861-52f0-981c-d222fba900c6" WaitsForAllPredecessors="True">
+            <IOSpec Version="2">
+              <Input>
+                <IOItem>
+                  <IOItemDefinition Name="CandidateMatrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>PRbot50</MappedTo>
+                </IOItem>
+                <IOItem>
+                  <IOItemDefinition Name="AnswerMatrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>AnswerMatrix</MappedTo>
+                </IOItem>
+              </Input>
+              <Output />
+            </IOSpec>
+            <ConfigWrapper Version="1" IsJava="False">
+              <ConfigValues>
+                <PropertyObject>
+                  <Version>3</Version>
+                  <Name>EffectivenessBestMeasure</Name>
+                  <DisplayName>Effectiveness Best Measure</DisplayName>
+                  <Description />
+                  <ValueType>System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+                  <Visible>True</Visible>
+                  <IsEnum>False</IsEnum>
+                  <Value IsNull="False">
+                    <boolean>false</boolean>
+                  </Value>
+                </PropertyObject>
+                <PropertyObject>
+                  <Version>3</Version>
+                  <Name>EffectivenessAllMeasure</Name>
+                  <DisplayName>Effectiveness All Measure</DisplayName>
+                  <Description />
+                  <ValueType>System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+                  <Visible>True</Visible>
+                  <IsEnum>False</IsEnum>
+                  <Value IsNull="False">
+                    <boolean>false</boolean>
+                  </Value>
+                </PropertyObject>
+                <PropertyObject>
+                  <Version>3</Version>
+                  <Name>TechniqueName</Name>
+                  <DisplayName>Technique name</DisplayName>
+                  <Description>The name of the technique used to compute the results.</Description>
+                  <ValueType>System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+                  <Visible>True</Visible>
+                  <IsEnum>False</IsEnum>
+                  <Value IsNull="False">
+                    <string />
+                  </Value>
+                </PropertyObject>
+                <PropertyObject>
+                  <Version>3</Version>
+                  <Name>DatasetName</Name>
+                  <DisplayName>Dataset name</DisplayName>
+                  <Description>The name of the dataset used to compute the results.</Description>
+                  <ValueType>System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+                  <Visible>True</Visible>
+                  <IsEnum>False</IsEnum>
+                  <Value IsNull="False">
+                    <string />
+                  </Value>
+                </PropertyObject>
+              </ConfigValues>
+            </ConfigWrapper>
+          </Metadata>
+        </SerializedVertexData>
+      </node>
+      <node id="b50ac160-9a58-4b1f-8c81-939b63b42ab8">
+        <SerializedVertexData Version="1" X="201.5" Y="425">
+          <Metadata type="TraceLab.Core.Components.ComponentMetadata, TraceLab.Core, Culture=neutral, PublicKeyToken=2c83cea59a8bb151" Label="bot 60 metrics" ComponentMetadataDefinitionID="2281c73a-c861-52f0-981c-d222fba900c6" WaitsForAllPredecessors="True">
+            <IOSpec Version="2">
+              <Input>
+                <IOItem>
+                  <IOItemDefinition Name="CandidateMatrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>PRbot60</MappedTo>
+                </IOItem>
+                <IOItem>
+                  <IOItemDefinition Name="AnswerMatrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>AnswerMatrix</MappedTo>
+                </IOItem>
+              </Input>
+              <Output />
+            </IOSpec>
+            <ConfigWrapper Version="1" IsJava="False">
+              <ConfigValues>
+                <PropertyObject>
+                  <Version>3</Version>
+                  <Name>EffectivenessBestMeasure</Name>
+                  <DisplayName>Effectiveness Best Measure</DisplayName>
+                  <Description />
+                  <ValueType>System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+                  <Visible>True</Visible>
+                  <IsEnum>False</IsEnum>
+                  <Value IsNull="False">
+                    <boolean>false</boolean>
+                  </Value>
+                </PropertyObject>
+                <PropertyObject>
+                  <Version>3</Version>
+                  <Name>EffectivenessAllMeasure</Name>
+                  <DisplayName>Effectiveness All Measure</DisplayName>
+                  <Description />
+                  <ValueType>System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+                  <Visible>True</Visible>
+                  <IsEnum>False</IsEnum>
+                  <Value IsNull="False">
+                    <boolean>false</boolean>
+                  </Value>
+                </PropertyObject>
+                <PropertyObject>
+                  <Version>3</Version>
+                  <Name>TechniqueName</Name>
+                  <DisplayName>Technique name</DisplayName>
+                  <Description>The name of the technique used to compute the results.</Description>
+                  <ValueType>System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+                  <Visible>True</Visible>
+                  <IsEnum>False</IsEnum>
+                  <Value IsNull="False">
+                    <string />
+                  </Value>
+                </PropertyObject>
+                <PropertyObject>
+                  <Version>3</Version>
+                  <Name>DatasetName</Name>
+                  <DisplayName>Dataset name</DisplayName>
+                  <Description>The name of the dataset used to compute the results.</Description>
+                  <ValueType>System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+                  <Visible>True</Visible>
+                  <IsEnum>False</IsEnum>
+                  <Value IsNull="False">
+                    <string />
+                  </Value>
+                </PropertyObject>
+              </ConfigValues>
+            </ConfigWrapper>
+          </Metadata>
+        </SerializedVertexData>
+      </node>
+      <node id="e5773ec3-c5d3-46de-8ed6-4dfcce6651dd">
+        <SerializedVertexData Version="1" X="204.5" Y="495">
+          <Metadata type="TraceLab.Core.Components.ComponentMetadata, TraceLab.Core, Culture=neutral, PublicKeyToken=2c83cea59a8bb151" Label="bot 80 metrics" ComponentMetadataDefinitionID="2281c73a-c861-52f0-981c-d222fba900c6" WaitsForAllPredecessors="True">
+            <IOSpec Version="2">
+              <Input>
+                <IOItem>
+                  <IOItemDefinition Name="CandidateMatrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>PRbot80</MappedTo>
+                </IOItem>
+                <IOItem>
+                  <IOItemDefinition Name="AnswerMatrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>AnswerMatrix</MappedTo>
+                </IOItem>
+              </Input>
+              <Output />
+            </IOSpec>
+            <ConfigWrapper Version="1" IsJava="False">
+              <ConfigValues>
+                <PropertyObject>
+                  <Version>3</Version>
+                  <Name>EffectivenessBestMeasure</Name>
+                  <DisplayName>Effectiveness Best Measure</DisplayName>
+                  <Description />
+                  <ValueType>System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+                  <Visible>True</Visible>
+                  <IsEnum>False</IsEnum>
+                  <Value IsNull="False">
+                    <boolean>false</boolean>
+                  </Value>
+                </PropertyObject>
+                <PropertyObject>
+                  <Version>3</Version>
+                  <Name>EffectivenessAllMeasure</Name>
+                  <DisplayName>Effectiveness All Measure</DisplayName>
+                  <Description />
+                  <ValueType>System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+                  <Visible>True</Visible>
+                  <IsEnum>False</IsEnum>
+                  <Value IsNull="False">
+                    <boolean>false</boolean>
+                  </Value>
+                </PropertyObject>
+                <PropertyObject>
+                  <Version>3</Version>
+                  <Name>TechniqueName</Name>
+                  <DisplayName>Technique name</DisplayName>
+                  <Description>The name of the technique used to compute the results.</Description>
+                  <ValueType>System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+                  <Visible>True</Visible>
+                  <IsEnum>False</IsEnum>
+                  <Value IsNull="False">
+                    <string />
+                  </Value>
+                </PropertyObject>
+                <PropertyObject>
+                  <Version>3</Version>
+                  <Name>DatasetName</Name>
+                  <DisplayName>Dataset name</DisplayName>
+                  <Description>The name of the dataset used to compute the results.</Description>
+                  <ValueType>System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+                  <Visible>True</Visible>
+                  <IsEnum>False</IsEnum>
+                  <Value IsNull="False">
+                    <string />
+                  </Value>
+                </PropertyObject>
+              </ConfigValues>
+            </ConfigWrapper>
+          </Metadata>
+        </SerializedVertexData>
+      </node>
+      <node id="f4509474-1463-46f5-9139-45f653a58068">
+        <SerializedVertexData Version="1" X="202.5" Y="460">
+          <Metadata type="TraceLab.Core.Components.ComponentMetadata, TraceLab.Core, Culture=neutral, PublicKeyToken=2c83cea59a8bb151" Label="bot 70 metrics" ComponentMetadataDefinitionID="2281c73a-c861-52f0-981c-d222fba900c6" WaitsForAllPredecessors="True">
+            <IOSpec Version="2">
+              <Input>
+                <IOItem>
+                  <IOItemDefinition Name="CandidateMatrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>PRbot70</MappedTo>
+                </IOItem>
+                <IOItem>
+                  <IOItemDefinition Name="AnswerMatrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>AnswerMatrix</MappedTo>
+                </IOItem>
+              </Input>
+              <Output />
+            </IOSpec>
+            <ConfigWrapper Version="1" IsJava="False">
+              <ConfigValues>
+                <PropertyObject>
+                  <Version>3</Version>
+                  <Name>EffectivenessBestMeasure</Name>
+                  <DisplayName>Effectiveness Best Measure</DisplayName>
+                  <Description />
+                  <ValueType>System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+                  <Visible>True</Visible>
+                  <IsEnum>False</IsEnum>
+                  <Value IsNull="False">
+                    <boolean>false</boolean>
+                  </Value>
+                </PropertyObject>
+                <PropertyObject>
+                  <Version>3</Version>
+                  <Name>EffectivenessAllMeasure</Name>
+                  <DisplayName>Effectiveness All Measure</DisplayName>
+                  <Description />
+                  <ValueType>System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+                  <Visible>True</Visible>
+                  <IsEnum>False</IsEnum>
+                  <Value IsNull="False">
+                    <boolean>false</boolean>
+                  </Value>
+                </PropertyObject>
+                <PropertyObject>
+                  <Version>3</Version>
+                  <Name>TechniqueName</Name>
+                  <DisplayName>Technique name</DisplayName>
+                  <Description>The name of the technique used to compute the results.</Description>
+                  <ValueType>System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+                  <Visible>True</Visible>
+                  <IsEnum>False</IsEnum>
+                  <Value IsNull="False">
+                    <string />
+                  </Value>
+                </PropertyObject>
+                <PropertyObject>
+                  <Version>3</Version>
+                  <Name>DatasetName</Name>
+                  <DisplayName>Dataset name</DisplayName>
+                  <Description>The name of the dataset used to compute the results.</Description>
+                  <ValueType>System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+                  <Visible>True</Visible>
+                  <IsEnum>False</IsEnum>
+                  <Value IsNull="False">
+                    <string />
+                  </Value>
+                </PropertyObject>
+              </ConfigValues>
+            </ConfigWrapper>
+          </Metadata>
+        </SerializedVertexData>
+      </node>
+      <node id="c05c60c9-44de-4779-a139-c729dabf7afc">
+        <SerializedVertexData Version="1" X="207.5" Y="528">
+          <Metadata type="TraceLab.Core.Components.ComponentMetadata, TraceLab.Core, Culture=neutral, PublicKeyToken=2c83cea59a8bb151" Label="bot 90 metrics" ComponentMetadataDefinitionID="2281c73a-c861-52f0-981c-d222fba900c6" WaitsForAllPredecessors="True">
+            <IOSpec Version="2">
+              <Input>
+                <IOItem>
+                  <IOItemDefinition Name="CandidateMatrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>PRbot90</MappedTo>
+                </IOItem>
+                <IOItem>
+                  <IOItemDefinition Name="AnswerMatrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>AnswerMatrix</MappedTo>
+                </IOItem>
+              </Input>
+              <Output />
+            </IOSpec>
+            <ConfigWrapper Version="1" IsJava="False">
+              <ConfigValues>
+                <PropertyObject>
+                  <Version>3</Version>
+                  <Name>EffectivenessBestMeasure</Name>
+                  <DisplayName>Effectiveness Best Measure</DisplayName>
+                  <Description />
+                  <ValueType>System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+                  <Visible>True</Visible>
+                  <IsEnum>False</IsEnum>
+                  <Value IsNull="False">
+                    <boolean>false</boolean>
+                  </Value>
+                </PropertyObject>
+                <PropertyObject>
+                  <Version>3</Version>
+                  <Name>EffectivenessAllMeasure</Name>
+                  <DisplayName>Effectiveness All Measure</DisplayName>
+                  <Description />
+                  <ValueType>System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+                  <Visible>True</Visible>
+                  <IsEnum>False</IsEnum>
+                  <Value IsNull="False">
+                    <boolean>false</boolean>
+                  </Value>
+                </PropertyObject>
+                <PropertyObject>
+                  <Version>3</Version>
+                  <Name>TechniqueName</Name>
+                  <DisplayName>Technique name</DisplayName>
+                  <Description>The name of the technique used to compute the results.</Description>
+                  <ValueType>System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+                  <Visible>True</Visible>
+                  <IsEnum>False</IsEnum>
+                  <Value IsNull="False">
+                    <string />
+                  </Value>
+                </PropertyObject>
+                <PropertyObject>
+                  <Version>3</Version>
+                  <Name>DatasetName</Name>
+                  <DisplayName>Dataset name</DisplayName>
+                  <Description>The name of the dataset used to compute the results.</Description>
+                  <ValueType>System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+                  <Visible>True</Visible>
+                  <IsEnum>False</IsEnum>
+                  <Value IsNull="False">
+                    <string />
+                  </Value>
+                </PropertyObject>
+              </ConfigValues>
+            </ConfigWrapper>
+          </Metadata>
+        </SerializedVertexData>
+      </node>
+      <node id="a869905e-fe58-4e5d-95db-619477155617">
+        <SerializedVertexData Version="1" X="196.5" Y="287">
+          <Metadata type="TraceLab.Core.Components.ComponentMetadata, TraceLab.Core, Culture=neutral, PublicKeyToken=2c83cea59a8bb151" Label="bot 20 metrics" ComponentMetadataDefinitionID="2281c73a-c861-52f0-981c-d222fba900c6" WaitsForAllPredecessors="True">
+            <IOSpec Version="2">
+              <Input>
+                <IOItem>
+                  <IOItemDefinition Name="CandidateMatrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>PRbot20</MappedTo>
+                </IOItem>
+                <IOItem>
+                  <IOItemDefinition Name="AnswerMatrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>AnswerMatrix</MappedTo>
+                </IOItem>
+              </Input>
+              <Output />
+            </IOSpec>
+            <ConfigWrapper Version="1" IsJava="False">
+              <ConfigValues>
+                <PropertyObject>
+                  <Version>3</Version>
+                  <Name>EffectivenessBestMeasure</Name>
+                  <DisplayName>Effectiveness Best Measure</DisplayName>
+                  <Description />
+                  <ValueType>System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+                  <Visible>True</Visible>
+                  <IsEnum>False</IsEnum>
+                  <Value IsNull="False">
+                    <boolean>false</boolean>
+                  </Value>
+                </PropertyObject>
+                <PropertyObject>
+                  <Version>3</Version>
+                  <Name>EffectivenessAllMeasure</Name>
+                  <DisplayName>Effectiveness All Measure</DisplayName>
+                  <Description />
+                  <ValueType>System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+                  <Visible>True</Visible>
+                  <IsEnum>False</IsEnum>
+                  <Value IsNull="False">
+                    <boolean>false</boolean>
+                  </Value>
+                </PropertyObject>
+                <PropertyObject>
+                  <Version>3</Version>
+                  <Name>TechniqueName</Name>
+                  <DisplayName>Technique name</DisplayName>
+                  <Description>The name of the technique used to compute the results.</Description>
+                  <ValueType>System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+                  <Visible>True</Visible>
+                  <IsEnum>False</IsEnum>
+                  <Value IsNull="False">
+                    <string />
+                  </Value>
+                </PropertyObject>
+                <PropertyObject>
+                  <Version>3</Version>
+                  <Name>DatasetName</Name>
+                  <DisplayName>Dataset name</DisplayName>
+                  <Description>The name of the dataset used to compute the results.</Description>
+                  <ValueType>System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+                  <Visible>True</Visible>
+                  <IsEnum>False</IsEnum>
+                  <Value IsNull="False">
+                    <string />
+                  </Value>
+                </PropertyObject>
+              </ConfigValues>
+            </ConfigWrapper>
+          </Metadata>
+        </SerializedVertexData>
+      </node>
+      <node id="Start">
+        <SerializedVertexData Version="1" X="200" Y="200">
+          <Metadata type="TraceLab.Core.Components.StartNodeMetadata, TraceLab.Core, Culture=neutral, PublicKeyToken=2c83cea59a8bb151" Label="Start" />
+        </SerializedVertexData>
+      </node>
+      <node id="End">
+        <SerializedVertexData Version="1" X="200" Y="578">
+          <Metadata type="TraceLab.Core.Components.EndNodeMetadata, TraceLab.Core, Culture=neutral, PublicKeyToken=2c83cea59a8bb151" Label="End" WaitsForAllPredecessors="True" />
+        </SerializedVertexData>
+      </node>
+      <edge id="99feb1bf-c16a-4676-8bc6-47d5ab5fa48b" source="2aeba9c3-eb67-477a-b8cf-6df5571b7a8e" target="End" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="94b9d88f-0787-48a7-a667-47244500ff21" source="19af46c0-77bc-4104-bb05-b29613350a19" target="End" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="f04e8839-66a9-450d-826c-6750294fd923" source="b1c5bea6-180a-46d7-9592-c657b91c55b0" target="End" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="92089eb1-fcd9-43dd-ad07-cfc6e22fbcf6" source="da2e25a6-f885-41b8-bc38-2b54a2c9ae81" target="End" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="29313a38-7080-4242-b940-9d6e49e46e94" source="b50ac160-9a58-4b1f-8c81-939b63b42ab8" target="End" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="74beb72a-a4d9-4d44-b477-8de4a6c617c6" source="e5773ec3-c5d3-46de-8ed6-4dfcce6651dd" target="End" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="829e569c-f36a-41dd-800b-a7f906e6f5fa" source="f4509474-1463-46f5-9139-45f653a58068" target="End" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="b3bbb672-faa4-46bb-a8a1-4901edc6a717" source="c05c60c9-44de-4779-a139-c729dabf7afc" target="End" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="5ff862ed-8334-4ba0-a0d5-c465295771ef" source="a869905e-fe58-4e5d-95db-619477155617" target="End" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="ce7bba0e-aab3-4e4a-a94c-cc6e08d4c38e" source="Start" target="2aeba9c3-eb67-477a-b8cf-6df5571b7a8e" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="e52d23d4-af6e-42f9-bb97-66c6111ef68d" source="Start" target="19af46c0-77bc-4104-bb05-b29613350a19" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="524e9b97-4a0b-4b61-b147-ae691f3afd8d" source="Start" target="b1c5bea6-180a-46d7-9592-c657b91c55b0" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="10c0652d-d569-43ed-9927-e8636c0c947a" source="Start" target="da2e25a6-f885-41b8-bc38-2b54a2c9ae81" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="cae1f5b1-15b2-4b98-a9a9-7a6b25322435" source="Start" target="b50ac160-9a58-4b1f-8c81-939b63b42ab8" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="e0e00ab4-951b-4d8a-9b69-6b594129f005" source="Start" target="e5773ec3-c5d3-46de-8ed6-4dfcce6651dd" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="daa87f88-d2a5-4184-bd6c-6d26cf41d151" source="Start" target="f4509474-1463-46f5-9139-45f653a58068" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="cae9cc75-1584-4e17-aa12-fb55e8c10cbc" source="Start" target="c05c60c9-44de-4779-a139-c729dabf7afc" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="e270d0fa-c467-4520-b5fe-728c3d451517" source="Start" target="a869905e-fe58-4e5d-95db-619477155617" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+    </graph>
+  </ComponentGraph>
+</CompositeComponentMetadataDefinition>

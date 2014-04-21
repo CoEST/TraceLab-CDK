@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8F624094-B08E-41EF-8675-085898FCBCA4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TraceLab.Components.RPlugin</RootNamespace>
+    <AssemblyName>TraceLab.Components.RPlugin</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\TraceLab.Components.RPlugin.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="RPlugin">
+      <HintPath>..\..\bin\Components\RPlugin.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TraceLab.Components.DevelopmentKit">
+      <HintPath>..\..\bin\Components\TraceLab.Components.DevelopmentKit.dll</HintPath>
+    </Reference>
+    <Reference Include="TraceLab.Components.Types">
+      <HintPath>..\..\bin\Types\TraceLab.Components.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="TraceLabSDK">
+      <HintPath>..\..\external\TraceLab\TraceLabSDK.dll</HintPath>
+    </Reference>
+    <Reference Include="TraceLabSDK.Types">
+      <HintPath>..\..\external\TraceLab\TraceLabSDK.Types.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DevelopmentKit\Tracers\InformationRetrieval\GibbsLDA-GAScript.cs" />
+    <Compile Include="DevelopmentKit\Tracers\InformationRetrieval\LDACorpus.cs" />
+    <Compile Include="DevelopmentKit\Tracers\InformationRetrieval\LDAScript.cs" />
+    <Compile Include="DevelopmentKit\Tracers\InformationRetrieval\LSAScript.cs" />
+    <Compile Include="DevelopmentKit\Metrics\Traceability\PCAScript.cs" />
+    <Compile Include="DevelopmentKit\Tracers\InformationRetrieval\GibbsLDAScript.cs" />
+    <Compile Include="DevelopmentKit\Tracers\InformationRetrieval\RTMScript.cs" />
+    <Compile Include="DevelopmentKit\Tracers\WebMining\HITSScript.cs" />
+    <Compile Include="DevelopmentKit\Tracers\WebMining\PageRankScript.cs" />
+    <Compile Include="Library\Metrics\Traceability\DoublePCAComponent.cs" />
+    <Compile Include="Library\Metrics\Traceability\LambdaCalculationComponent.cs" />
+    <Compile Include="Library\Metrics\Traceability\QuadruplePCAComponent.cs" />
+    <Compile Include="Library\Metrics\Traceability\TriplePCAComponent.cs" />
+    <Compile Include="Library\Tracers\InformationRetrieval\GibbsLDA-GAComponent.cs" />
+    <Compile Include="Library\Tracers\InformationRetrieval\LDAComponent.cs" />
+    <Compile Include="Library\Tracers\InformationRetrieval\LDALoopComponent.cs" />
+    <Compile Include="Library\Tracers\InformationRetrieval\LSAComponent.cs" />
+    <Compile Include="Library\Tracers\InformationRetrieval\GibbsLDAComponent.cs" />
+    <Compile Include="Library\Tracers\InformationRetrieval\GibbsLDALoopComponent.cs" />
+    <Compile Include="Library\Tracers\InformationRetrieval\RTMComponent.cs" />
+    <Compile Include="Library\Tracers\InformationRetrieval\RTMLoopComponent.cs" />
+    <Compile Include="Library\Tracers\WebMining\HITSComponent.cs" />
+    <Compile Include="Library\Tracers\WebMining\PageRankComponent.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <EmbeddedResource Include="Resources\LDA.R" />
+    <EmbeddedResource Include="Resources\LSA.R" />
+    <EmbeddedResource Include="Resources\PCA.R" />
+    <EmbeddedResource Include="Resources\GibbsLDA.R" />
+    <EmbeddedResource Include="Resources\RTM.R" />
+    <EmbeddedResource Include="Resources\GibbsLDA-GA.R" />
+    <EmbeddedResource Include="Resources\HITS.R" />
+    <EmbeddedResource Include="Resources\PageRank.R" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TraceLab.Components.RPlugin.Types\TraceLab.Components.RPlugin.Types.csproj">
+      <Project>{5ff2033f-9082-4143-835b-f5d487fdc085}</Project>
+      <Name>TraceLab.Components.RPlugin.Types</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>if not exist "$(SolutionDir)..\bin\Components" mkdir "$(SolutionDir)..\bin\Components"</PreBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>copy "$(TargetPath)" "$(SolutionDir)..\bin\Components"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

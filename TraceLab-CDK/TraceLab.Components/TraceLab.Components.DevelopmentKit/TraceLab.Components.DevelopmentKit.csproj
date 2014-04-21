@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3B4900C4-536A-4ABC-A284-21A914100A36}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TraceLab.Components.DevelopmentKit</RootNamespace>
+    <AssemblyName>TraceLab.Components.DevelopmentKit</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\TraceLab.Components.DevelopmentKit.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\..\..\..\..\..\..\Windows\assembly\GAC\Microsoft.Office.Interop.Excel\12.0.0.0__71e9bce111e9429c\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TraceLabSDK">
+      <HintPath>..\..\external\TraceLab\TraceLabSDK.dll</HintPath>
+    </Reference>
+    <Reference Include="TraceLabSDK.Types">
+      <HintPath>..\..\external\TraceLab\TraceLabSDK.Types.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IO\Artifacts.cs" />
+    <Compile Include="IO\BiGrams.cs" />
+    <Compile Include="IO\Generics.cs" />
+    <Compile Include="IO\Metrics.cs" />
+    <Compile Include="IO\Oracle.cs" />
+    <Compile Include="IO\Similarities.cs" />
+    <Compile Include="IO\Stopwords.cs" />
+    <Compile Include="Metrics\FeatureLocation\EffectivenessAllMeasureComputation.cs" />
+    <Compile Include="Metrics\FeatureLocation\EffectivenessBestMeasureComputation.cs" />
+    <Compile Include="Metrics\IMetricComputation.cs" />
+    <Compile Include="Metrics\MetricComputation.cs" />
+    <Compile Include="Metrics\Traceability\AveragePrecisionQueryComputation.cs" />
+    <Compile Include="Metrics\Traceability\AveragePrecisionRanklistComputation.cs" />
+    <Compile Include="Metrics\Traceability\MeanAveragePrecisionComputation.cs" />
+    <Compile Include="Metrics\Traceability\PrecisionQueryComputation.cs" />
+    <Compile Include="Metrics\Traceability\PrecisionRanklistComputation.cs" />
+    <Compile Include="Metrics\Traceability\PrecisionRecallCurveComputation.cs" />
+    <Compile Include="Metrics\Traceability\RecallQueryComputation.cs" />
+    <Compile Include="Metrics\Traceability\RecallRanklistComputation.cs" />
+    <Compile Include="Postprocessors\CSTI\DeltaUtils.cs" />
+    <Compile Include="Postprocessors\CSTI\OCSTI.cs" />
+    <Compile Include="Postprocessors\CSTI\UDCSTI.cs" />
+    <Compile Include="Preprocessors\ExecutionTraces\JPDA.cs" />
+    <Compile Include="Preprocessors\ExecutionTraces\TPTP.cs" />
+    <Compile Include="Preprocessors\SimpleStopwordsRemover.cs" />
+    <Compile Include="Preprocessors\Splitters\CamelCaseSplitter.cs" />
+    <Compile Include="Preprocessors\Cleanup.cs" />
+    <Compile Include="Preprocessors\Splitters\SemeruSplitter.cs" />
+    <Compile Include="Preprocessors\Stemmers\Porter\PorterStemmer.cs" />
+    <Compile Include="Preprocessors\Stemmers\Porter\PorterStemmerUtils.cs" />
+    <Compile Include="Preprocessors\SmoothingFilter.cs" />
+    <Compile Include="Preprocessors\Stemmers\Snowball\ISnowballStemmer.cs" />
+    <Compile Include="Preprocessors\Stemmers\Snowball\Languages\Among.cs" />
+    <Compile Include="Preprocessors\Stemmers\Snowball\Languages\CzechStemmer.cs" />
+    <Compile Include="Preprocessors\Stemmers\Snowball\Languages\DanishStemmer.cs" />
+    <Compile Include="Preprocessors\Stemmers\Snowball\Languages\DutchStemmer.cs" />
+    <Compile Include="Preprocessors\Stemmers\Snowball\Languages\EnglishStemmer.cs" />
+    <Compile Include="Preprocessors\Stemmers\Snowball\Languages\FinnishStemmer.cs" />
+    <Compile Include="Preprocessors\Stemmers\Snowball\Languages\FrenchStemmer.cs" />
+    <Compile Include="Preprocessors\Stemmers\Snowball\Languages\GermanStemmer.cs" />
+    <Compile Include="Preprocessors\Stemmers\Snowball\Languages\HungarianStemmer.cs" />
+    <Compile Include="Preprocessors\Stemmers\Snowball\Languages\ItalianStemmer.cs" />
+    <Compile Include="Preprocessors\Stemmers\Snowball\Languages\NorwegianStemmer.cs" />
+    <Compile Include="Preprocessors\Stemmers\Snowball\Languages\PortugalStemmer.cs" />
+    <Compile Include="Preprocessors\Stemmers\Snowball\Languages\RomanianStemmer.cs" />
+    <Compile Include="Preprocessors\Stemmers\Snowball\Languages\RussianStemmer.cs" />
+    <Compile Include="Preprocessors\Stemmers\Snowball\Languages\SpanishStemmer.cs" />
+    <Compile Include="Preprocessors\Stemmers\Snowball\Languages\StemmerOperations.cs" />
+    <Compile Include="Preprocessors\Stemmers\Snowball\SnowballStemmer.cs" />
+    <Compile Include="Preprocessors\Stemmers\Snowball\SnowballStemmerEnum.cs" />
+    <Compile Include="Preprocessors\Stemmers\Snowball\SnowballStemmerUtils.cs" />
+    <Compile Include="Preprocessors\StopwordsRemover.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="TermDocumentMatrix.cs" />
+    <Compile Include="Postprocessors\AffineTransformation.cs" />
+    <Compile Include="Tracers\InformationRetrieval\JSD.cs" />
+    <Compile Include="Tracers\InformationRetrieval\VSM.cs" />
+    <Compile Include="DevelopmentKitException.cs" />
+    <Compile Include="Utils\TermDocumentMatrixUtils\SimilarityUtil.cs" />
+    <Compile Include="Utils\TermDocumentMatrixUtils\WeightUtil.cs" />
+    <Compile Include="Utils\TLSimilarityMatrixUtil.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TraceLab.Components.Types\TraceLab.Components.Types.csproj">
+      <Project>{7892D43B-5ABB-4B73-90CB-18785621CFC3}</Project>
+      <Name>TraceLab.Components.Types</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>if not exist "$(SolutionDir)..\bin\Components" mkdir "$(SolutionDir)..\bin\Components"</PreBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>copy "$(TargetPath)" "$(SolutionDir)..\bin\Components"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

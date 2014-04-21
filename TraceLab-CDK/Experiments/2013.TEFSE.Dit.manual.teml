@@ -1,0 +1,700 @@
+﻿<graph>
+  <References>
+    <PackageReference ID="e6b6c24e-9811-4c8c-b897-33e474d20e89" Name="RPlugin Components" />
+  </References>
+  <ExperimentInfo>
+    <Version>2</Version>
+    <Id>95e37773-87d1-42f4-ad34-eeece93764da</Id>
+    <Name>LDA-GA</Name>
+    <LayoutName>EfficientSugiyama</LayoutName>
+    <Author>SEMERU; Evan Moritz</Author>
+  </ExperimentInfo>
+  <node id="Start">
+    <SerializedVertexData Version="1" X="255" Y="-47">
+      <Metadata type="TraceLab.Core.Components.StartNodeMetadata, TraceLab.Core, Culture=neutral, PublicKeyToken=2c83cea59a8bb151" Label="Start" />
+    </SerializedVertexData>
+  </node>
+  <node id="End">
+    <SerializedVertexData Version="1" X="283" Y="310">
+      <Metadata type="TraceLab.Core.Components.EndNodeMetadata, TraceLab.Core, Culture=neutral, PublicKeyToken=2c83cea59a8bb151" Label="End" WaitsForAllPredecessors="True" />
+    </SerializedVertexData>
+  </node>
+  <node id="9be7e94e-f5ea-4200-97fd-f8670de136f7">
+    <SerializedVertexData Version="1" X="353" Y="32">
+      <Metadata type="TraceLab.Core.Components.ComponentMetadata, TraceLab.Core, Culture=neutral, PublicKeyToken=2c83cea59a8bb151" Label="Cleanup Preprocessor" ComponentMetadataDefinitionID="c618ab2f-4e2e-525d-8ef7-e267b36a21bc" WaitsForAllPredecessors="True">
+        <IOSpec Version="2">
+          <Input>
+            <IOItem>
+              <IOItemDefinition Name="listOfArtifacts" Type="TraceLabSDK.Types.TLArtifactsCollection" IOType="Input" />
+              <MappedTo>TargetArtifacts</MappedTo>
+            </IOItem>
+          </Input>
+          <Output>
+            <IOItem>
+              <IOItemDefinition Name="listOfArtifacts" Type="TraceLabSDK.Types.TLArtifactsCollection" IOType="Output" />
+              <MappedTo>TargetArtifacts</MappedTo>
+            </IOItem>
+          </Output>
+        </IOSpec>
+        <ConfigWrapper Version="1" IsJava="False">
+          <ConfigValues>
+            <PropertyObject>
+              <Version>3</Version>
+              <Name>ConvertLowercase</Name>
+              <DisplayName>Convert to lowercase?</DisplayName>
+              <Description>Option to convert terms to lowercase</Description>
+              <ValueType>System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+              <Visible>True</Visible>
+              <IsEnum>False</IsEnum>
+              <Value IsNull="False">
+                <boolean>true</boolean>
+              </Value>
+            </PropertyObject>
+          </ConfigValues>
+        </ConfigWrapper>
+      </Metadata>
+    </SerializedVertexData>
+  </node>
+  <node id="20ddc09f-f52d-4f2e-8936-1b208ebcbffa">
+    <SerializedVertexData Version="1" X="172" Y="32">
+      <Metadata type="TraceLab.Core.Components.ComponentMetadata, TraceLab.Core, Culture=neutral, PublicKeyToken=2c83cea59a8bb151" Label="Cleanup Preprocessor" ComponentMetadataDefinitionID="c618ab2f-4e2e-525d-8ef7-e267b36a21bc" WaitsForAllPredecessors="True">
+        <IOSpec Version="2">
+          <Input>
+            <IOItem>
+              <IOItemDefinition Name="listOfArtifacts" Type="TraceLabSDK.Types.TLArtifactsCollection" IOType="Input" />
+              <MappedTo>SourceArtifacts</MappedTo>
+            </IOItem>
+          </Input>
+          <Output>
+            <IOItem>
+              <IOItemDefinition Name="listOfArtifacts" Type="TraceLabSDK.Types.TLArtifactsCollection" IOType="Output" />
+              <MappedTo>SourceArtifacts</MappedTo>
+            </IOItem>
+          </Output>
+        </IOSpec>
+        <ConfigWrapper Version="1" IsJava="False">
+          <ConfigValues>
+            <PropertyObject>
+              <Version>3</Version>
+              <Name>ConvertLowercase</Name>
+              <DisplayName>Convert to lowercase?</DisplayName>
+              <Description>Option to convert terms to lowercase</Description>
+              <ValueType>System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+              <Visible>True</Visible>
+              <IsEnum>False</IsEnum>
+              <Value IsNull="False">
+                <boolean>true</boolean>
+              </Value>
+            </PropertyObject>
+          </ConfigValues>
+        </ConfigWrapper>
+      </Metadata>
+    </SerializedVertexData>
+  </node>
+  <node id="2a7df976-3b69-48b6-8949-5d946d89f326">
+    <SerializedVertexData Version="1" X="282" Y="270">
+      <Metadata type="TraceLab.Core.Components.ComponentMetadata, TraceLab.Core, Culture=neutral, PublicKeyToken=2c83cea59a8bb151" Label="(WPF) Results Visualization" ComponentMetadataDefinitionID="b0ab3623-bad8-5bdb-aa16-38a3af9eceb1" WaitsForAllPredecessors="True">
+        <IOSpec Version="2">
+          <Input>
+            <IOItem>
+              <IOItemDefinition Name="ExperimentResults" Type="TraceLabSDK.Types.Contests.TLExperimentsResultsCollection" IOType="Input" />
+              <MappedTo>ExperimentResults</MappedTo>
+            </IOItem>
+          </Input>
+          <Output />
+        </IOSpec>
+        <ConfigWrapper Version="1" IsJava="False">
+          <ConfigValues />
+        </ConfigWrapper>
+      </Metadata>
+    </SerializedVertexData>
+  </node>
+  <node id="bdb985ea-be83-41cb-9d68-a926d16655fa">
+    <SerializedVertexData Version="1" X="171" Y="76">
+      <Metadata type="TraceLab.Core.Components.ComponentMetadata, TraceLab.Core, Culture=neutral, PublicKeyToken=2c83cea59a8bb151" Label="Configured LDA" ComponentMetadataDefinitionID="bc5402be-1ee8-5420-b1a2-e585dc70690d" WaitsForAllPredecessors="True">
+        <IOSpec Version="2">
+          <Input>
+            <IOItem>
+              <IOItemDefinition Name="SourceArtifacts" Type="TraceLabSDK.Types.TLArtifactsCollection" IOType="Input" />
+              <MappedTo>SourceArtifacts</MappedTo>
+            </IOItem>
+            <IOItem>
+              <IOItemDefinition Name="TargetArtifacts" Type="TraceLabSDK.Types.TLArtifactsCollection" IOType="Input" />
+              <MappedTo>TargetArtifacts</MappedTo>
+            </IOItem>
+          </Input>
+          <Output>
+            <IOItem>
+              <IOItemDefinition Name="Similarities" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+              <MappedTo>LDA</MappedTo>
+            </IOItem>
+          </Output>
+        </IOSpec>
+        <ConfigWrapper Version="1" IsJava="False">
+          <ConfigValues>
+            <PropertyObject>
+              <Version>3</Version>
+              <Name>Alpha</Name>
+              <DisplayName>Alpha</DisplayName>
+              <Description />
+              <ValueType>System.Double, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+              <Visible>True</Visible>
+              <IsEnum>False</IsEnum>
+              <Value IsNull="False">
+                <double>0.513031671755016</double>
+              </Value>
+            </PropertyObject>
+            <PropertyObject>
+              <Version>3</Version>
+              <Name>Beta</Name>
+              <DisplayName>Beta</DisplayName>
+              <Description />
+              <ValueType>System.Double, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+              <Visible>True</Visible>
+              <IsEnum>False</IsEnum>
+              <Value IsNull="False">
+                <double>0.043824988650158</double>
+              </Value>
+            </PropertyObject>
+            <PropertyObject>
+              <Version>3</Version>
+              <Name>NumTopics</Name>
+              <DisplayName>NumTopics</DisplayName>
+              <Description />
+              <ValueType>System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+              <Visible>True</Visible>
+              <IsEnum>False</IsEnum>
+              <Value IsNull="False">
+                <int>77</int>
+              </Value>
+            </PropertyObject>
+            <PropertyObject>
+              <Version>3</Version>
+              <Name>GibbsIterations</Name>
+              <DisplayName>GibbsIterations</DisplayName>
+              <Description />
+              <ValueType>System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+              <Visible>True</Visible>
+              <IsEnum>False</IsEnum>
+              <Value IsNull="False">
+                <int>399</int>
+              </Value>
+            </PropertyObject>
+            <PropertyObject>
+              <Version>3</Version>
+              <Name>Seed</Name>
+              <DisplayName>Seed</DisplayName>
+              <Description />
+              <ValueType>System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+              <Visible>True</Visible>
+              <IsEnum>False</IsEnum>
+              <Value IsNull="False">
+                <int>5</int>
+              </Value>
+            </PropertyObject>
+            <PropertyObject>
+              <Version>3</Version>
+              <Name>RScriptPath</Name>
+              <DisplayName>RScript executable</DisplayName>
+              <Description>Path to RScript executable</Description>
+              <ValueType>TraceLabSDK.Component.Config.FilePath, TraceLabSDK, Culture=neutral, PublicKeyToken=2c83cea59a8bb151</ValueType>
+              <Visible>True</Visible>
+              <IsEnum>False</IsEnum>
+              <Value IsNull="False">
+                <FilePath>
+                  <Version>2</Version>
+                  <Relative>..\..\..\Program Files\R\R-2.15.2\bin\Rscript.exe</Relative>
+                </FilePath>
+              </Value>
+            </PropertyObject>
+          </ConfigValues>
+        </ConfigWrapper>
+      </Metadata>
+    </SerializedVertexData>
+  </node>
+  <node id="acfe05af-278b-4720-ac35-af502a468345">
+    <SerializedVertexData Version="1" X="280" Y="224">
+      <Metadata type="TraceLab.Core.Components.ComponentMetadata, TraceLab.Core, Culture=neutral, PublicKeyToken=2c83cea59a8bb151" Label="(UI) Results Metrics Converter" ComponentMetadataDefinitionID="a022c90a-61eb-54d1-ab13-fcff58a0dbe7" WaitsForAllPredecessors="True">
+        <IOSpec Version="2">
+          <Input />
+          <Output>
+            <IOItem>
+              <IOItemDefinition Name="ExperimentResults" Type="TraceLabSDK.Types.Contests.TLExperimentsResultsCollection" IOType="Output" />
+              <MappedTo>ExperimentResults</MappedTo>
+            </IOItem>
+          </Output>
+        </IOSpec>
+        <ConfigWrapper Version="1" IsJava="False">
+          <ConfigValues />
+        </ConfigWrapper>
+      </Metadata>
+    </SerializedVertexData>
+  </node>
+  <node id="900e8c93-e30d-457f-8e77-337de18326b7">
+    <SerializedVertexData Version="1" X="163" Y="-9">
+      <Metadata type="TraceLab.Core.Components.ComponentMetadata, TraceLab.Core, Culture=neutral, PublicKeyToken=2c83cea59a8bb151" Label="Import Source Artifacts" ComponentMetadataDefinitionID="d7a7d59a-f58a-53e9-9665-feb9f833520b" WaitsForAllPredecessors="True">
+        <IOSpec Version="2">
+          <Input />
+          <Output>
+            <IOItem>
+              <IOItemDefinition Name="Artifacts" Type="TraceLabSDK.Types.TLArtifactsCollection" IOType="Output" />
+              <MappedTo>SourceArtifacts</MappedTo>
+            </IOItem>
+          </Output>
+        </IOSpec>
+        <ConfigWrapper Version="1" IsJava="False">
+          <ConfigValues>
+            <PropertyObject>
+              <Version>3</Version>
+              <Name>Directory</Name>
+              <DisplayName>Artifacts directory</DisplayName>
+              <Description>Directory location containing artifacts files.</Description>
+              <ValueType>TraceLabSDK.Component.Config.DirectoryPath, TraceLabSDK, Culture=neutral, PublicKeyToken=2c83cea59a8bb151</ValueType>
+              <Visible>True</Visible>
+              <IsEnum>False</IsEnum>
+              <Value IsNull="False">
+                <DirectoryPath>
+                  <Version>1</Version>
+                  <Relative>datasets\EasyClinic_ENG\UC</Relative>
+                </DirectoryPath>
+              </Value>
+            </PropertyObject>
+            <PropertyObject>
+              <Version>3</Version>
+              <Name>Filter</Name>
+              <DisplayName>Filter</DisplayName>
+              <Description>Only reads files with the given extension (no '.'). Leave blank to include all files.</Description>
+              <ValueType>System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+              <Visible>True</Visible>
+              <IsEnum>False</IsEnum>
+              <Value IsNull="False">
+                <string>txt</string>
+              </Value>
+            </PropertyObject>
+          </ConfigValues>
+        </ConfigWrapper>
+      </Metadata>
+    </SerializedVertexData>
+  </node>
+  <node id="95023fb8-d558-4ac2-a302-73222b86534e">
+    <SerializedVertexData Version="1" X="267" Y="130">
+      <Metadata type="TraceLab.Core.Components.ComponentMetadata, TraceLab.Core, Culture=neutral, PublicKeyToken=2c83cea59a8bb151" Label="Answer Matrix Importer" ComponentMetadataDefinitionID="aa047bfe-f4c3-5e91-8e76-21be32506a3f" WaitsForAllPredecessors="True">
+        <IOSpec Version="2">
+          <Input />
+          <Output>
+            <IOItem>
+              <IOItemDefinition Name="AnswerMatrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+              <MappedTo>AnswerMatrix</MappedTo>
+            </IOItem>
+          </Output>
+        </IOSpec>
+        <ConfigWrapper Version="1" IsJava="False">
+          <ConfigValues>
+            <PropertyObject>
+              <Version>3</Version>
+              <Name>OracleDocument</Name>
+              <DisplayName>Oracle file</DisplayName>
+              <Description>Oracle file location</Description>
+              <ValueType>TraceLabSDK.Component.Config.FilePath, TraceLabSDK, Culture=neutral, PublicKeyToken=2c83cea59a8bb151</ValueType>
+              <Visible>True</Visible>
+              <IsEnum>False</IsEnum>
+              <Value IsNull="False">
+                <FilePath>
+                  <Version>2</Version>
+                  <Relative>datasets\EasyClinic_ENG\oracle.UC.txt</Relative>
+                </FilePath>
+              </Value>
+            </PropertyObject>
+          </ConfigValues>
+        </ConfigWrapper>
+      </Metadata>
+    </SerializedVertexData>
+  </node>
+  <node id="c230a2b1-0362-4478-bd42-214ce29eaeab">
+    <SerializedVertexData Version="1" X="366" Y="182">
+      <Metadata type="TraceLab.Core.Components.ComponentMetadata, TraceLab.Core, Culture=neutral, PublicKeyToken=2c83cea59a8bb151" Label="Baseline LDA metrics" ComponentMetadataDefinitionID="3da5383e-19ab-5217-9891-b058e4d9c6e3" WaitsForAllPredecessors="True">
+        <IOSpec Version="2">
+          <Input>
+            <IOItem>
+              <IOItemDefinition Name="AnswerMatrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+              <MappedTo>AnswerMatrix</MappedTo>
+            </IOItem>
+            <IOItem>
+              <IOItemDefinition Name="CandidateMatrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+              <MappedTo>Baseline</MappedTo>
+            </IOItem>
+          </Input>
+          <Output />
+        </IOSpec>
+        <ConfigWrapper Version="1" IsJava="False">
+          <ConfigValues>
+            <PropertyObject>
+              <Version>3</Version>
+              <Name>Precision</Name>
+              <DisplayName>Precision</DisplayName>
+              <Description />
+              <ValueType>System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+              <Visible>True</Visible>
+              <IsEnum>False</IsEnum>
+              <Value IsNull="False">
+                <boolean>false</boolean>
+              </Value>
+            </PropertyObject>
+            <PropertyObject>
+              <Version>3</Version>
+              <Name>Recall</Name>
+              <DisplayName>Recall</DisplayName>
+              <Description />
+              <ValueType>System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+              <Visible>True</Visible>
+              <IsEnum>False</IsEnum>
+              <Value IsNull="False">
+                <boolean>false</boolean>
+              </Value>
+            </PropertyObject>
+            <PropertyObject>
+              <Version>3</Version>
+              <Name>AveragePrecision</Name>
+              <DisplayName>AveragePrecision</DisplayName>
+              <Description />
+              <ValueType>System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+              <Visible>True</Visible>
+              <IsEnum>False</IsEnum>
+              <Value IsNull="False">
+                <boolean>false</boolean>
+              </Value>
+            </PropertyObject>
+            <PropertyObject>
+              <Version>3</Version>
+              <Name>PRCurve</Name>
+              <DisplayName>Precision-Recall Curve</DisplayName>
+              <Description />
+              <ValueType>System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+              <Visible>True</Visible>
+              <IsEnum>False</IsEnum>
+              <Value IsNull="False">
+                <boolean>true</boolean>
+              </Value>
+            </PropertyObject>
+            <PropertyObject>
+              <Version>3</Version>
+              <Name>TechniqueName</Name>
+              <DisplayName>Technique name</DisplayName>
+              <Description>The name of the technique used to compute the results.</Description>
+              <ValueType>System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+              <Visible>True</Visible>
+              <IsEnum>False</IsEnum>
+              <Value IsNull="False">
+                <string>Baseline LDA</string>
+              </Value>
+            </PropertyObject>
+            <PropertyObject>
+              <Version>3</Version>
+              <Name>DatasetName</Name>
+              <DisplayName>Dataset name</DisplayName>
+              <Description>The name of the dataset used to compute the results.</Description>
+              <ValueType>System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+              <Visible>True</Visible>
+              <IsEnum>False</IsEnum>
+              <Value IsNull="False">
+                <string>Dataset</string>
+              </Value>
+            </PropertyObject>
+          </ConfigValues>
+        </ConfigWrapper>
+      </Metadata>
+    </SerializedVertexData>
+  </node>
+  <node id="e71aaf8a-c9e1-43fc-9d1d-509cda14f1eb">
+    <SerializedVertexData Version="1" X="201" Y="183">
+      <Metadata type="TraceLab.Core.Components.ComponentMetadata, TraceLab.Core, Culture=neutral, PublicKeyToken=2c83cea59a8bb151" Label="Configured LDA metrics" ComponentMetadataDefinitionID="3da5383e-19ab-5217-9891-b058e4d9c6e3" WaitsForAllPredecessors="True">
+        <IOSpec Version="2">
+          <Input>
+            <IOItem>
+              <IOItemDefinition Name="AnswerMatrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+              <MappedTo>AnswerMatrix</MappedTo>
+            </IOItem>
+            <IOItem>
+              <IOItemDefinition Name="CandidateMatrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+              <MappedTo>LDA</MappedTo>
+            </IOItem>
+          </Input>
+          <Output />
+        </IOSpec>
+        <ConfigWrapper Version="1" IsJava="False">
+          <ConfigValues>
+            <PropertyObject>
+              <Version>3</Version>
+              <Name>Precision</Name>
+              <DisplayName>Precision</DisplayName>
+              <Description />
+              <ValueType>System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+              <Visible>True</Visible>
+              <IsEnum>False</IsEnum>
+              <Value IsNull="False">
+                <boolean>false</boolean>
+              </Value>
+            </PropertyObject>
+            <PropertyObject>
+              <Version>3</Version>
+              <Name>Recall</Name>
+              <DisplayName>Recall</DisplayName>
+              <Description />
+              <ValueType>System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+              <Visible>True</Visible>
+              <IsEnum>False</IsEnum>
+              <Value IsNull="False">
+                <boolean>false</boolean>
+              </Value>
+            </PropertyObject>
+            <PropertyObject>
+              <Version>3</Version>
+              <Name>AveragePrecision</Name>
+              <DisplayName>AveragePrecision</DisplayName>
+              <Description />
+              <ValueType>System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+              <Visible>True</Visible>
+              <IsEnum>False</IsEnum>
+              <Value IsNull="False">
+                <boolean>false</boolean>
+              </Value>
+            </PropertyObject>
+            <PropertyObject>
+              <Version>3</Version>
+              <Name>PRCurve</Name>
+              <DisplayName>Precision-Recall Curve</DisplayName>
+              <Description />
+              <ValueType>System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+              <Visible>True</Visible>
+              <IsEnum>False</IsEnum>
+              <Value IsNull="False">
+                <boolean>true</boolean>
+              </Value>
+            </PropertyObject>
+            <PropertyObject>
+              <Version>3</Version>
+              <Name>TechniqueName</Name>
+              <DisplayName>Technique name</DisplayName>
+              <Description>The name of the technique used to compute the results.</Description>
+              <ValueType>System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+              <Visible>True</Visible>
+              <IsEnum>False</IsEnum>
+              <Value IsNull="False">
+                <string>LDA (GA)</string>
+              </Value>
+            </PropertyObject>
+            <PropertyObject>
+              <Version>3</Version>
+              <Name>DatasetName</Name>
+              <DisplayName>Dataset name</DisplayName>
+              <Description>The name of the dataset used to compute the results.</Description>
+              <ValueType>System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+              <Visible>True</Visible>
+              <IsEnum>False</IsEnum>
+              <Value IsNull="False">
+                <string>Dataset</string>
+              </Value>
+            </PropertyObject>
+          </ConfigValues>
+        </ConfigWrapper>
+      </Metadata>
+    </SerializedVertexData>
+  </node>
+  <node id="4b5e1c70-0469-4278-966c-a7fdff8b32a9">
+    <SerializedVertexData Version="1" X="354" Y="78">
+      <Metadata type="TraceLab.Core.Components.ComponentMetadata, TraceLab.Core, Culture=neutral, PublicKeyToken=2c83cea59a8bb151" Label="Baseline LDA" ComponentMetadataDefinitionID="bc5402be-1ee8-5420-b1a2-e585dc70690d" WaitsForAllPredecessors="True">
+        <IOSpec Version="2">
+          <Input>
+            <IOItem>
+              <IOItemDefinition Name="SourceArtifacts" Type="TraceLabSDK.Types.TLArtifactsCollection" IOType="Input" />
+              <MappedTo>SourceArtifacts</MappedTo>
+            </IOItem>
+            <IOItem>
+              <IOItemDefinition Name="TargetArtifacts" Type="TraceLabSDK.Types.TLArtifactsCollection" IOType="Input" />
+              <MappedTo>TargetArtifacts</MappedTo>
+            </IOItem>
+          </Input>
+          <Output>
+            <IOItem>
+              <IOItemDefinition Name="Similarities" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+              <MappedTo>Baseline</MappedTo>
+            </IOItem>
+          </Output>
+        </IOSpec>
+        <ConfigWrapper Version="1" IsJava="False">
+          <ConfigValues>
+            <PropertyObject>
+              <Version>3</Version>
+              <Name>Alpha</Name>
+              <DisplayName>Alpha</DisplayName>
+              <Description />
+              <ValueType>System.Double, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+              <Visible>True</Visible>
+              <IsEnum>False</IsEnum>
+              <Value IsNull="False">
+                <double>0.004</double>
+              </Value>
+            </PropertyObject>
+            <PropertyObject>
+              <Version>3</Version>
+              <Name>Beta</Name>
+              <DisplayName>Beta</DisplayName>
+              <Description />
+              <ValueType>System.Double, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+              <Visible>True</Visible>
+              <IsEnum>False</IsEnum>
+              <Value IsNull="False">
+                <double>0.1</double>
+              </Value>
+            </PropertyObject>
+            <PropertyObject>
+              <Version>3</Version>
+              <Name>NumTopics</Name>
+              <DisplayName>NumTopics</DisplayName>
+              <Description />
+              <ValueType>System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+              <Visible>True</Visible>
+              <IsEnum>False</IsEnum>
+              <Value IsNull="False">
+                <int>250</int>
+              </Value>
+            </PropertyObject>
+            <PropertyObject>
+              <Version>3</Version>
+              <Name>GibbsIterations</Name>
+              <DisplayName>GibbsIterations</DisplayName>
+              <Description />
+              <ValueType>System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+              <Visible>True</Visible>
+              <IsEnum>False</IsEnum>
+              <Value IsNull="False">
+                <int>400</int>
+              </Value>
+            </PropertyObject>
+            <PropertyObject>
+              <Version>3</Version>
+              <Name>Seed</Name>
+              <DisplayName>Seed</DisplayName>
+              <Description />
+              <ValueType>System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+              <Visible>True</Visible>
+              <IsEnum>False</IsEnum>
+              <Value IsNull="False">
+                <int>5</int>
+              </Value>
+            </PropertyObject>
+            <PropertyObject>
+              <Version>3</Version>
+              <Name>RScriptPath</Name>
+              <DisplayName>RScript executable</DisplayName>
+              <Description>Path to RScript executable</Description>
+              <ValueType>TraceLabSDK.Component.Config.FilePath, TraceLabSDK, Culture=neutral, PublicKeyToken=2c83cea59a8bb151</ValueType>
+              <Visible>True</Visible>
+              <IsEnum>False</IsEnum>
+              <Value IsNull="False">
+                <FilePath>
+                  <Version>2</Version>
+                  <Relative>..\..\..\Program Files\R\R-2.15.2\bin\Rscript.exe</Relative>
+                </FilePath>
+              </Value>
+            </PropertyObject>
+          </ConfigValues>
+        </ConfigWrapper>
+      </Metadata>
+    </SerializedVertexData>
+  </node>
+  <node id="18c7fbc7-70d1-4554-8626-f4eadcf1a0c3">
+    <SerializedVertexData Version="1" X="352" Y="-12">
+      <Metadata type="TraceLab.Core.Components.ComponentMetadata, TraceLab.Core, Culture=neutral, PublicKeyToken=2c83cea59a8bb151" Label="Import Target Artifacts" ComponentMetadataDefinitionID="d7a7d59a-f58a-53e9-9665-feb9f833520b" WaitsForAllPredecessors="True">
+        <IOSpec Version="2">
+          <Input />
+          <Output>
+            <IOItem>
+              <IOItemDefinition Name="Artifacts" Type="TraceLabSDK.Types.TLArtifactsCollection" IOType="Output" />
+              <MappedTo>TargetArtifacts</MappedTo>
+            </IOItem>
+          </Output>
+        </IOSpec>
+        <ConfigWrapper Version="1" IsJava="False">
+          <ConfigValues>
+            <PropertyObject>
+              <Version>3</Version>
+              <Name>Directory</Name>
+              <DisplayName>Artifacts directory</DisplayName>
+              <Description>Directory location containing artifacts files.</Description>
+              <ValueType>TraceLabSDK.Component.Config.DirectoryPath, TraceLabSDK, Culture=neutral, PublicKeyToken=2c83cea59a8bb151</ValueType>
+              <Visible>True</Visible>
+              <IsEnum>False</IsEnum>
+              <Value IsNull="False">
+                <DirectoryPath>
+                  <Version>1</Version>
+                  <Relative>datasets\EasyClinic_ENG\CC</Relative>
+                </DirectoryPath>
+              </Value>
+            </PropertyObject>
+            <PropertyObject>
+              <Version>3</Version>
+              <Name>Filter</Name>
+              <DisplayName>Filter</DisplayName>
+              <Description>Only reads files with the given extension (no '.'). Leave blank to include all files.</Description>
+              <ValueType>System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ValueType>
+              <Visible>True</Visible>
+              <IsEnum>False</IsEnum>
+              <Value IsNull="False">
+                <string>txt</string>
+              </Value>
+            </PropertyObject>
+          </ConfigValues>
+        </ConfigWrapper>
+      </Metadata>
+    </SerializedVertexData>
+  </node>
+  <edge id="f53d144e-daba-48d0-88c8-73cce024d55e" source="Start" target="900e8c93-e30d-457f-8e77-337de18326b7" isFixed="False" isVisible="True">
+    <RoutePointsCollection />
+  </edge>
+  <edge id="c5a38601-5752-4945-ad9c-04ba522f5a7d" source="Start" target="18c7fbc7-70d1-4554-8626-f4eadcf1a0c3" isFixed="False" isVisible="True">
+    <RoutePointsCollection />
+  </edge>
+  <edge id="4f77daa5-408d-4092-9640-05573a54bd86" source="9be7e94e-f5ea-4200-97fd-f8670de136f7" target="4b5e1c70-0469-4278-966c-a7fdff8b32a9" isFixed="False" isVisible="True">
+    <RoutePointsCollection />
+  </edge>
+  <edge id="6fd5bfef-8180-485a-ab4f-a3bdd5004e28" source="9be7e94e-f5ea-4200-97fd-f8670de136f7" target="bdb985ea-be83-41cb-9d68-a926d16655fa" isFixed="False" isVisible="True">
+    <RoutePointsCollection />
+  </edge>
+  <edge id="2bf3ea76-fd02-417e-9d1c-23bb78a3a5f0" source="20ddc09f-f52d-4f2e-8936-1b208ebcbffa" target="4b5e1c70-0469-4278-966c-a7fdff8b32a9" isFixed="False" isVisible="True">
+    <RoutePointsCollection />
+  </edge>
+  <edge id="97e9a47b-9a85-494f-b5af-c5f26ce08549" source="20ddc09f-f52d-4f2e-8936-1b208ebcbffa" target="bdb985ea-be83-41cb-9d68-a926d16655fa" isFixed="False" isVisible="True">
+    <RoutePointsCollection />
+  </edge>
+  <edge id="3d237175-aa03-4612-8877-6152240d152d" source="2a7df976-3b69-48b6-8949-5d946d89f326" target="End" isFixed="False" isVisible="True">
+    <RoutePointsCollection />
+  </edge>
+  <edge id="78b25543-f85c-4706-8da1-959cc9706225" source="bdb985ea-be83-41cb-9d68-a926d16655fa" target="95023fb8-d558-4ac2-a302-73222b86534e" isFixed="False" isVisible="True">
+    <RoutePointsCollection />
+  </edge>
+  <edge id="01fe03b6-0f5c-49f5-a08b-ed2f14868734" source="acfe05af-278b-4720-ac35-af502a468345" target="2a7df976-3b69-48b6-8949-5d946d89f326" isFixed="False" isVisible="True">
+    <RoutePointsCollection />
+  </edge>
+  <edge id="cc17d5e1-5119-4303-ae89-748d9c935085" source="900e8c93-e30d-457f-8e77-337de18326b7" target="20ddc09f-f52d-4f2e-8936-1b208ebcbffa" isFixed="False" isVisible="True">
+    <RoutePointsCollection />
+  </edge>
+  <edge id="ab58f694-e335-4086-ba99-196cd7fb739c" source="95023fb8-d558-4ac2-a302-73222b86534e" target="e71aaf8a-c9e1-43fc-9d1d-509cda14f1eb" isFixed="False" isVisible="True">
+    <RoutePointsCollection />
+  </edge>
+  <edge id="e586209a-88e1-492c-879c-22296880e7b5" source="95023fb8-d558-4ac2-a302-73222b86534e" target="c230a2b1-0362-4478-bd42-214ce29eaeab" isFixed="False" isVisible="True">
+    <RoutePointsCollection />
+  </edge>
+  <edge id="54156afe-52dc-47aa-857a-d9f1538b0518" source="c230a2b1-0362-4478-bd42-214ce29eaeab" target="acfe05af-278b-4720-ac35-af502a468345" isFixed="False" isVisible="True">
+    <RoutePointsCollection />
+  </edge>
+  <edge id="dc500f66-d620-4089-944b-6c69d2deb13e" source="e71aaf8a-c9e1-43fc-9d1d-509cda14f1eb" target="acfe05af-278b-4720-ac35-af502a468345" isFixed="False" isVisible="True">
+    <RoutePointsCollection />
+  </edge>
+  <edge id="2c790511-f8cd-443d-88c6-790b58749f20" source="4b5e1c70-0469-4278-966c-a7fdff8b32a9" target="95023fb8-d558-4ac2-a302-73222b86534e" isFixed="False" isVisible="True">
+    <RoutePointsCollection />
+  </edge>
+  <edge id="55f9901d-f62f-4e1f-99f8-44974fbb4a8a" source="18c7fbc7-70d1-4554-8626-f4eadcf1a0c3" target="9be7e94e-f5ea-4200-97fd-f8670de136f7" isFixed="False" isVisible="True">
+    <RoutePointsCollection />
+  </edge>
+</graph>

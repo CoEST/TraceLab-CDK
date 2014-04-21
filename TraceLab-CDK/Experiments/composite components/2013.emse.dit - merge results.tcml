@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CompositeComponentMetadataDefinition xmlVersion="2">
+  <Info>
+    <ID>86e42d97-1411-445e-a976-89a70311fa86</ID>
+    <Version>1.0.0.0</Version>
+    <Label>2013.EMSE.Dit - Merge results</Label>
+    <Name>2013.EMSE.Dit - Merge results</Name>
+    <Author>SEMERU; Evan Moritz</Author>
+    <Description />
+  </Info>
+  <Input>
+    <IOItemDefinition Name="PR_loopBot10" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+    <IOItemDefinition Name="PR_loopBot20" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+    <IOItemDefinition Name="PR_loopBot30" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+    <IOItemDefinition Name="PR_loopBot40" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+    <IOItemDefinition Name="PR_loopBot50" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+    <IOItemDefinition Name="PR_loopBot60" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+    <IOItemDefinition Name="PR_loopBot70" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+    <IOItemDefinition Name="PR_loopBot80" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+    <IOItemDefinition Name="PR_loopBot90" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+    <IOItemDefinition Name="PRbot10" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+    <IOItemDefinition Name="PRbot20" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+    <IOItemDefinition Name="PRbot30" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+    <IOItemDefinition Name="PRbot40" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+    <IOItemDefinition Name="PRbot50" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+    <IOItemDefinition Name="PRbot60" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+    <IOItemDefinition Name="PRbot70" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+    <IOItemDefinition Name="PRbot80" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+    <IOItemDefinition Name="PRbot90" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+  </Input>
+  <Output>
+    <IOItemDefinition Name="PRbot10" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+    <IOItemDefinition Name="PRbot20" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+    <IOItemDefinition Name="PRbot30" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+    <IOItemDefinition Name="PRbot40" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+    <IOItemDefinition Name="PRbot50" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+    <IOItemDefinition Name="PRbot60" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+    <IOItemDefinition Name="PRbot70" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+    <IOItemDefinition Name="PRbot80" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+    <IOItemDefinition Name="PRbot90" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+  </Output>
+  <ConfigDefinition>
+    <IsJava>False</IsJava>
+    <ConfigProperties />
+  </ConfigDefinition>
+  <ComponentGraph>
+    <graph>
+      <References />
+      <ExperimentInfo>
+        <Version>2</Version>
+        <Id>64b4e945-232f-46b4-a37b-cd9e0914d56f</Id>
+      </ExperimentInfo>
+      <node id="f943092e-4b28-4d36-98e9-866664b2c857">
+        <SerializedVertexData Version="1" X="195.241" Y="520.467">
+          <Metadata type="TraceLab.Core.Components.ComponentMetadata, TraceLab.Core, Culture=neutral, PublicKeyToken=2c83cea59a8bb151" Label="Merge PR bot 90" ComponentMetadataDefinitionID="ef056075-1b8d-5f54-b4d1-09fca060a2d9" WaitsForAllPredecessors="True">
+            <IOSpec Version="2">
+              <Input>
+                <IOItem>
+                  <IOItemDefinition Name="Matrix1" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>PRbot90</MappedTo>
+                </IOItem>
+                <IOItem>
+                  <IOItemDefinition Name="Matrix2" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>PR_loopBot90</MappedTo>
+                </IOItem>
+              </Input>
+              <Output>
+                <IOItem>
+                  <IOItemDefinition Name="Merged" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+                  <MappedTo>PRbot90</MappedTo>
+                </IOItem>
+              </Output>
+            </IOSpec>
+            <ConfigWrapper Version="1" IsJava="False">
+              <ConfigValues />
+            </ConfigWrapper>
+          </Metadata>
+        </SerializedVertexData>
+      </node>
+      <node id="9dd823da-fdc1-4ade-b5cd-ce8bd4bf10dc">
+        <SerializedVertexData Version="1" X="195.243" Y="487.847">
+          <Metadata type="TraceLab.Core.Components.ComponentMetadata, TraceLab.Core, Culture=neutral, PublicKeyToken=2c83cea59a8bb151" Label="Merge PR bot 80" ComponentMetadataDefinitionID="ef056075-1b8d-5f54-b4d1-09fca060a2d9" WaitsForAllPredecessors="True">
+            <IOSpec Version="2">
+              <Input>
+                <IOItem>
+                  <IOItemDefinition Name="Matrix1" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>PRbot80</MappedTo>
+                </IOItem>
+                <IOItem>
+                  <IOItemDefinition Name="Matrix2" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>PR_loopBot80</MappedTo>
+                </IOItem>
+              </Input>
+              <Output>
+                <IOItem>
+                  <IOItemDefinition Name="Merged" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+                  <MappedTo>PRbot80</MappedTo>
+                </IOItem>
+              </Output>
+            </IOSpec>
+            <ConfigWrapper Version="1" IsJava="False">
+              <ConfigValues />
+            </ConfigWrapper>
+          </Metadata>
+        </SerializedVertexData>
+      </node>
+      <node id="39545e54-41a0-408a-88a0-47817f6f2c0e">
+        <SerializedVertexData Version="1" X="196.598" Y="455.227">
+          <Metadata type="TraceLab.Core.Components.ComponentMetadata, TraceLab.Core, Culture=neutral, PublicKeyToken=2c83cea59a8bb151" Label="Merge PR bot 70" ComponentMetadataDefinitionID="ef056075-1b8d-5f54-b4d1-09fca060a2d9" WaitsForAllPredecessors="True">
+            <IOSpec Version="2">
+              <Input>
+                <IOItem>
+                  <IOItemDefinition Name="Matrix1" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>PRbot70</MappedTo>
+                </IOItem>
+                <IOItem>
+                  <IOItemDefinition Name="Matrix2" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>PR_loopBot70</MappedTo>
+                </IOItem>
+              </Input>
+              <Output>
+                <IOItem>
+                  <IOItemDefinition Name="Merged" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+                  <MappedTo>PRbot70</MappedTo>
+                </IOItem>
+              </Output>
+            </IOSpec>
+            <ConfigWrapper Version="1" IsJava="False">
+              <ConfigValues />
+            </ConfigWrapper>
+          </Metadata>
+        </SerializedVertexData>
+      </node>
+      <node id="91a41053-be96-48e4-b873-afae363747e6">
+        <SerializedVertexData Version="1" X="202.037" Y="353.29">
+          <Metadata type="TraceLab.Core.Components.ComponentMetadata, TraceLab.Core, Culture=neutral, PublicKeyToken=2c83cea59a8bb151" Label="Merge PR bot 40" ComponentMetadataDefinitionID="ef056075-1b8d-5f54-b4d1-09fca060a2d9" WaitsForAllPredecessors="True">
+            <IOSpec Version="2">
+              <Input>
+                <IOItem>
+                  <IOItemDefinition Name="Matrix1" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>PRbot40</MappedTo>
+                </IOItem>
+                <IOItem>
+                  <IOItemDefinition Name="Matrix2" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>PR_loopBot40</MappedTo>
+                </IOItem>
+              </Input>
+              <Output>
+                <IOItem>
+                  <IOItemDefinition Name="Merged" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+                  <MappedTo>PRbot40</MappedTo>
+                </IOItem>
+              </Output>
+            </IOSpec>
+            <ConfigWrapper Version="1" IsJava="False">
+              <ConfigValues />
+            </ConfigWrapper>
+          </Metadata>
+        </SerializedVertexData>
+      </node>
+      <node id="9bbd1925-7828-4878-bc0a-17b931177051">
+        <SerializedVertexData Version="1" X="199.319" Y="421.248">
+          <Metadata type="TraceLab.Core.Components.ComponentMetadata, TraceLab.Core, Culture=neutral, PublicKeyToken=2c83cea59a8bb151" Label="Merge PR bot 60" ComponentMetadataDefinitionID="ef056075-1b8d-5f54-b4d1-09fca060a2d9" WaitsForAllPredecessors="True">
+            <IOSpec Version="2">
+              <Input>
+                <IOItem>
+                  <IOItemDefinition Name="Matrix1" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>PRbot60</MappedTo>
+                </IOItem>
+                <IOItem>
+                  <IOItemDefinition Name="Matrix2" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>PR_loopBot60</MappedTo>
+                </IOItem>
+              </Input>
+              <Output>
+                <IOItem>
+                  <IOItemDefinition Name="Merged" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+                  <MappedTo>PRbot60</MappedTo>
+                </IOItem>
+              </Output>
+            </IOSpec>
+            <ConfigWrapper Version="1" IsJava="False">
+              <ConfigValues />
+            </ConfigWrapper>
+          </Metadata>
+        </SerializedVertexData>
+      </node>
+      <node id="6b6fe1e5-2364-4946-9f2c-dd618b8b7841">
+        <SerializedVertexData Version="1" X="202.039" Y="387.269">
+          <Metadata type="TraceLab.Core.Components.ComponentMetadata, TraceLab.Core, Culture=neutral, PublicKeyToken=2c83cea59a8bb151" Label="Merge PR bot 50" ComponentMetadataDefinitionID="ef056075-1b8d-5f54-b4d1-09fca060a2d9" WaitsForAllPredecessors="True">
+            <IOSpec Version="2">
+              <Input>
+                <IOItem>
+                  <IOItemDefinition Name="Matrix1" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>PRbot50</MappedTo>
+                </IOItem>
+                <IOItem>
+                  <IOItemDefinition Name="Matrix2" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>PR_loopBot50</MappedTo>
+                </IOItem>
+              </Input>
+              <Output>
+                <IOItem>
+                  <IOItemDefinition Name="Merged" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+                  <MappedTo>PRbot50</MappedTo>
+                </IOItem>
+              </Output>
+            </IOSpec>
+            <ConfigWrapper Version="1" IsJava="False">
+              <ConfigValues />
+            </ConfigWrapper>
+          </Metadata>
+        </SerializedVertexData>
+      </node>
+      <node id="5bd4885d-d51b-4f8b-9e27-ed9892509705">
+        <SerializedVertexData Version="1" X="203.394" Y="319.312">
+          <Metadata type="TraceLab.Core.Components.ComponentMetadata, TraceLab.Core, Culture=neutral, PublicKeyToken=2c83cea59a8bb151" Label="Merge PR bot 30" ComponentMetadataDefinitionID="ef056075-1b8d-5f54-b4d1-09fca060a2d9" WaitsForAllPredecessors="True">
+            <IOSpec Version="2">
+              <Input>
+                <IOItem>
+                  <IOItemDefinition Name="Matrix1" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>PRbot30</MappedTo>
+                </IOItem>
+                <IOItem>
+                  <IOItemDefinition Name="Matrix2" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>PR_loopBot30</MappedTo>
+                </IOItem>
+              </Input>
+              <Output>
+                <IOItem>
+                  <IOItemDefinition Name="Merged" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+                  <MappedTo>PRbot30</MappedTo>
+                </IOItem>
+              </Output>
+            </IOSpec>
+            <ConfigWrapper Version="1" IsJava="False">
+              <ConfigValues />
+            </ConfigWrapper>
+          </Metadata>
+        </SerializedVertexData>
+      </node>
+      <node id="9d442b33-861e-41e7-a956-dac234b49eef">
+        <SerializedVertexData Version="1" X="203.393" Y="283.988">
+          <Metadata type="TraceLab.Core.Components.ComponentMetadata, TraceLab.Core, Culture=neutral, PublicKeyToken=2c83cea59a8bb151" Label="Merge PR bot 20" ComponentMetadataDefinitionID="ef056075-1b8d-5f54-b4d1-09fca060a2d9" WaitsForAllPredecessors="True">
+            <IOSpec Version="2">
+              <Input>
+                <IOItem>
+                  <IOItemDefinition Name="Matrix1" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>PRbot20</MappedTo>
+                </IOItem>
+                <IOItem>
+                  <IOItemDefinition Name="Matrix2" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>PR_loopBot20</MappedTo>
+                </IOItem>
+              </Input>
+              <Output>
+                <IOItem>
+                  <IOItemDefinition Name="Merged" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+                  <MappedTo>PRbot20</MappedTo>
+                </IOItem>
+              </Output>
+            </IOSpec>
+            <ConfigWrapper Version="1" IsJava="False">
+              <ConfigValues />
+            </ConfigWrapper>
+          </Metadata>
+        </SerializedVertexData>
+      </node>
+      <node id="d3feacb9-0800-4f85-96a8-c6326eebced5">
+        <SerializedVertexData Version="1" X="204.759" Y="250">
+          <Metadata type="TraceLab.Core.Components.ComponentMetadata, TraceLab.Core, Culture=neutral, PublicKeyToken=2c83cea59a8bb151" Label="Merge PR bot 10" ComponentMetadataDefinitionID="ef056075-1b8d-5f54-b4d1-09fca060a2d9" WaitsForAllPredecessors="True">
+            <IOSpec Version="2">
+              <Input>
+                <IOItem>
+                  <IOItemDefinition Name="Matrix1" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>PRbot10</MappedTo>
+                </IOItem>
+                <IOItem>
+                  <IOItemDefinition Name="Matrix2" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Input" />
+                  <MappedTo>PR_loopBot10</MappedTo>
+                </IOItem>
+              </Input>
+              <Output>
+                <IOItem>
+                  <IOItemDefinition Name="Merged" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+                  <MappedTo>PRbot10</MappedTo>
+                </IOItem>
+              </Output>
+            </IOSpec>
+            <ConfigWrapper Version="1" IsJava="False">
+              <ConfigValues />
+            </ConfigWrapper>
+          </Metadata>
+        </SerializedVertexData>
+      </node>
+      <node id="Start">
+        <SerializedVertexData Version="1" X="200" Y="200">
+          <Metadata type="TraceLab.Core.Components.StartNodeMetadata, TraceLab.Core, Culture=neutral, PublicKeyToken=2c83cea59a8bb151" Label="Start" />
+        </SerializedVertexData>
+      </node>
+      <node id="End">
+        <SerializedVertexData Version="1" X="200" Y="570.467">
+          <Metadata type="TraceLab.Core.Components.EndNodeMetadata, TraceLab.Core, Culture=neutral, PublicKeyToken=2c83cea59a8bb151" Label="End" WaitsForAllPredecessors="True" />
+        </SerializedVertexData>
+      </node>
+      <edge id="455a63c6-5dcf-45d3-9c8e-cd448ea42338" source="f943092e-4b28-4d36-98e9-866664b2c857" target="End" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="c6521ce9-cfbc-41c6-80c9-7697a04de10c" source="9dd823da-fdc1-4ade-b5cd-ce8bd4bf10dc" target="End" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="0a0f44d8-4064-4690-869f-20076c45eb1a" source="39545e54-41a0-408a-88a0-47817f6f2c0e" target="End" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="2df8930d-42b0-40ef-ab8c-5b1f9519fe04" source="91a41053-be96-48e4-b873-afae363747e6" target="End" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="e32d87db-cba3-4db7-b831-2a104f701849" source="9bbd1925-7828-4878-bc0a-17b931177051" target="End" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="298d27d5-f78e-4e54-b11e-97f5ed953ad9" source="6b6fe1e5-2364-4946-9f2c-dd618b8b7841" target="End" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="16bedf7f-d53d-4bfa-8ee6-df0b4ea1cf78" source="5bd4885d-d51b-4f8b-9e27-ed9892509705" target="End" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="ecfdb6ed-89d0-4fa8-994d-606f463077bc" source="9d442b33-861e-41e7-a956-dac234b49eef" target="End" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="b563c872-a608-4af4-823c-7489c978ff8c" source="d3feacb9-0800-4f85-96a8-c6326eebced5" target="End" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="96216a21-bbbb-40fc-a99f-2469fd88a682" source="Start" target="f943092e-4b28-4d36-98e9-866664b2c857" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="ab81a192-0924-4d26-a117-028cd63c46d0" source="Start" target="9dd823da-fdc1-4ade-b5cd-ce8bd4bf10dc" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="78fd5eb9-f3ba-466b-9240-08b0d9320ccb" source="Start" target="39545e54-41a0-408a-88a0-47817f6f2c0e" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="16752a43-45d8-4457-82b9-133a5ba2e9b2" source="Start" target="91a41053-be96-48e4-b873-afae363747e6" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="20f7a14e-2f42-48cb-aef4-bdade9ff730a" source="Start" target="9bbd1925-7828-4878-bc0a-17b931177051" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="59ffdd64-d575-4fa9-8716-81d6526fb419" source="Start" target="6b6fe1e5-2364-4946-9f2c-dd618b8b7841" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="0256816c-9d13-48cb-bd15-6d26cdb2edbf" source="Start" target="5bd4885d-d51b-4f8b-9e27-ed9892509705" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="983da7bb-7235-428e-ad2e-1bba191cf223" source="Start" target="9d442b33-861e-41e7-a956-dac234b49eef" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="882bb349-b09e-45a7-9e5e-4ffe61dbd325" source="Start" target="d3feacb9-0800-4f85-96a8-c6326eebced5" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+    </graph>
+  </ComponentGraph>
+</CompositeComponentMetadataDefinition>

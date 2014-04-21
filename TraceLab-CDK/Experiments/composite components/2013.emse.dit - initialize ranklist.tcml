@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CompositeComponentMetadataDefinition xmlVersion="2">
+  <Info>
+    <ID>01600013-c094-4756-9ecf-63b4fc0a6ddc</ID>
+    <Version>1.0.0.0</Version>
+    <Label>2013.EMSE.Dit - Initialize ranklist</Label>
+    <Name>2013.EMSE.Dit - Initialize ranklist</Name>
+    <Author>SEMERU; Evan Moritz</Author>
+    <Description>Initializes the 10%-90% ranklists for the 2013 EMSE Dit experiment</Description>
+  </Info>
+  <Input />
+  <Output>
+    <IOItemDefinition Name="Matrix1" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+    <IOItemDefinition Name="Matrix2" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+    <IOItemDefinition Name="Matrix3" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+    <IOItemDefinition Name="Matrix4" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+    <IOItemDefinition Name="Matrix5" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+    <IOItemDefinition Name="Matrix6" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+    <IOItemDefinition Name="Matrix7" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+    <IOItemDefinition Name="Matrix8" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+    <IOItemDefinition Name="Matrix9" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+  </Output>
+  <ConfigDefinition>
+    <IsJava>False</IsJava>
+    <ConfigProperties />
+  </ConfigDefinition>
+  <ComponentGraph>
+    <graph>
+      <References />
+      <ExperimentInfo>
+        <Version>2</Version>
+        <Id>138290a9-efeb-4cb8-bc5e-5f954aadc27b</Id>
+      </ExperimentInfo>
+      <node id="6361a9f7-9884-46df-9e1c-cdc8ea1e73b7">
+        <SerializedVertexData Version="1" X="77" Y="-147">
+          <Metadata type="TraceLab.Core.Components.ComponentMetadata, TraceLab.Core, Culture=neutral, PublicKeyToken=2c83cea59a8bb151" Label="Similarity Matrix Null Importer" ComponentMetadataDefinitionID="7a6ca72c-0557-5829-8f50-08a4da1c51fa" WaitsForAllPredecessors="True">
+            <IOSpec Version="2">
+              <Input />
+              <Output>
+                <IOItem>
+                  <IOItemDefinition Name="Matrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+                  <MappedTo>Matrix1</MappedTo>
+                </IOItem>
+              </Output>
+            </IOSpec>
+            <ConfigWrapper Version="1" IsJava="False">
+              <ConfigValues />
+            </ConfigWrapper>
+          </Metadata>
+        </SerializedVertexData>
+      </node>
+      <node id="009093d7-bb10-4141-890e-a804791d808f">
+        <SerializedVertexData Version="1" X="65" Y="-112">
+          <Metadata type="TraceLab.Core.Components.ComponentMetadata, TraceLab.Core, Culture=neutral, PublicKeyToken=2c83cea59a8bb151" Label="Similarity Matrix Null Importer" ComponentMetadataDefinitionID="7a6ca72c-0557-5829-8f50-08a4da1c51fa" WaitsForAllPredecessors="True">
+            <IOSpec Version="2">
+              <Input />
+              <Output>
+                <IOItem>
+                  <IOItemDefinition Name="Matrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+                  <MappedTo>Matrix2</MappedTo>
+                </IOItem>
+              </Output>
+            </IOSpec>
+            <ConfigWrapper Version="1" IsJava="False">
+              <ConfigValues />
+            </ConfigWrapper>
+          </Metadata>
+        </SerializedVertexData>
+      </node>
+      <node id="2e3245a9-641d-4881-81b2-a939ac16dfb0">
+        <SerializedVertexData Version="1" X="71" Y="-75">
+          <Metadata type="TraceLab.Core.Components.ComponentMetadata, TraceLab.Core, Culture=neutral, PublicKeyToken=2c83cea59a8bb151" Label="Similarity Matrix Null Importer" ComponentMetadataDefinitionID="7a6ca72c-0557-5829-8f50-08a4da1c51fa" WaitsForAllPredecessors="True">
+            <IOSpec Version="2">
+              <Input />
+              <Output>
+                <IOItem>
+                  <IOItemDefinition Name="Matrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+                  <MappedTo>Matrix3</MappedTo>
+                </IOItem>
+              </Output>
+            </IOSpec>
+            <ConfigWrapper Version="1" IsJava="False">
+              <ConfigValues />
+            </ConfigWrapper>
+          </Metadata>
+        </SerializedVertexData>
+      </node>
+      <node id="90e18072-e6f2-4b81-834d-21505ddb2d3d">
+        <SerializedVertexData Version="1" X="62" Y="-45">
+          <Metadata type="TraceLab.Core.Components.ComponentMetadata, TraceLab.Core, Culture=neutral, PublicKeyToken=2c83cea59a8bb151" Label="Similarity Matrix Null Importer" ComponentMetadataDefinitionID="7a6ca72c-0557-5829-8f50-08a4da1c51fa" WaitsForAllPredecessors="True">
+            <IOSpec Version="2">
+              <Input />
+              <Output>
+                <IOItem>
+                  <IOItemDefinition Name="Matrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+                  <MappedTo>Matrix4</MappedTo>
+                </IOItem>
+              </Output>
+            </IOSpec>
+            <ConfigWrapper Version="1" IsJava="False">
+              <ConfigValues />
+            </ConfigWrapper>
+          </Metadata>
+        </SerializedVertexData>
+      </node>
+      <node id="8e8b2e81-0ec8-4477-9c58-04d653d2655f">
+        <SerializedVertexData Version="1" X="298" Y="-150">
+          <Metadata type="TraceLab.Core.Components.ComponentMetadata, TraceLab.Core, Culture=neutral, PublicKeyToken=2c83cea59a8bb151" Label="Similarity Matrix Null Importer" ComponentMetadataDefinitionID="7a6ca72c-0557-5829-8f50-08a4da1c51fa" WaitsForAllPredecessors="True">
+            <IOSpec Version="2">
+              <Input />
+              <Output>
+                <IOItem>
+                  <IOItemDefinition Name="Matrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+                  <MappedTo>Matrix5</MappedTo>
+                </IOItem>
+              </Output>
+            </IOSpec>
+            <ConfigWrapper Version="1" IsJava="False">
+              <ConfigValues />
+            </ConfigWrapper>
+          </Metadata>
+        </SerializedVertexData>
+      </node>
+      <node id="379859ff-2599-439b-bb82-2e6987b99a28">
+        <SerializedVertexData Version="1" X="338" Y="-114">
+          <Metadata type="TraceLab.Core.Components.ComponentMetadata, TraceLab.Core, Culture=neutral, PublicKeyToken=2c83cea59a8bb151" Label="Similarity Matrix Null Importer" ComponentMetadataDefinitionID="7a6ca72c-0557-5829-8f50-08a4da1c51fa" WaitsForAllPredecessors="True">
+            <IOSpec Version="2">
+              <Input />
+              <Output>
+                <IOItem>
+                  <IOItemDefinition Name="Matrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+                  <MappedTo>Matrix6</MappedTo>
+                </IOItem>
+              </Output>
+            </IOSpec>
+            <ConfigWrapper Version="1" IsJava="False">
+              <ConfigValues />
+            </ConfigWrapper>
+          </Metadata>
+        </SerializedVertexData>
+      </node>
+      <node id="01975588-0a51-41c8-976e-6c25710b9394">
+        <SerializedVertexData Version="1" X="302" Y="-72">
+          <Metadata type="TraceLab.Core.Components.ComponentMetadata, TraceLab.Core, Culture=neutral, PublicKeyToken=2c83cea59a8bb151" Label="Similarity Matrix Null Importer" ComponentMetadataDefinitionID="7a6ca72c-0557-5829-8f50-08a4da1c51fa" WaitsForAllPredecessors="True">
+            <IOSpec Version="2">
+              <Input />
+              <Output>
+                <IOItem>
+                  <IOItemDefinition Name="Matrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+                  <MappedTo>Matrix7</MappedTo>
+                </IOItem>
+              </Output>
+            </IOSpec>
+            <ConfigWrapper Version="1" IsJava="False">
+              <ConfigValues />
+            </ConfigWrapper>
+          </Metadata>
+        </SerializedVertexData>
+      </node>
+      <node id="e3383c64-ee31-482e-b251-b9c7abbbbb85">
+        <SerializedVertexData Version="1" X="302" Y="-37">
+          <Metadata type="TraceLab.Core.Components.ComponentMetadata, TraceLab.Core, Culture=neutral, PublicKeyToken=2c83cea59a8bb151" Label="Similarity Matrix Null Importer" ComponentMetadataDefinitionID="7a6ca72c-0557-5829-8f50-08a4da1c51fa" WaitsForAllPredecessors="True">
+            <IOSpec Version="2">
+              <Input />
+              <Output>
+                <IOItem>
+                  <IOItemDefinition Name="Matrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+                  <MappedTo>Matrix8</MappedTo>
+                </IOItem>
+              </Output>
+            </IOSpec>
+            <ConfigWrapper Version="1" IsJava="False">
+              <ConfigValues />
+            </ConfigWrapper>
+          </Metadata>
+        </SerializedVertexData>
+      </node>
+      <node id="6c80f030-36b0-4a6a-8fd3-1b4714a6435a">
+        <SerializedVertexData Version="1" X="194" Y="2">
+          <Metadata type="TraceLab.Core.Components.ComponentMetadata, TraceLab.Core, Culture=neutral, PublicKeyToken=2c83cea59a8bb151" Label="Similarity Matrix Null Importer" ComponentMetadataDefinitionID="7a6ca72c-0557-5829-8f50-08a4da1c51fa" WaitsForAllPredecessors="True">
+            <IOSpec Version="2">
+              <Input />
+              <Output>
+                <IOItem>
+                  <IOItemDefinition Name="Matrix" Type="TraceLabSDK.Types.TLSimilarityMatrix" IOType="Output" />
+                  <MappedTo>Matrix9</MappedTo>
+                </IOItem>
+              </Output>
+            </IOSpec>
+            <ConfigWrapper Version="1" IsJava="False">
+              <ConfigValues />
+            </ConfigWrapper>
+          </Metadata>
+        </SerializedVertexData>
+      </node>
+      <node id="Start">
+        <SerializedVertexData Version="1" X="200" Y="-200">
+          <Metadata type="TraceLab.Core.Components.StartNodeMetadata, TraceLab.Core, Culture=neutral, PublicKeyToken=2c83cea59a8bb151" Label="Start" />
+        </SerializedVertexData>
+      </node>
+      <node id="End">
+        <SerializedVertexData Version="1" X="200" Y="52">
+          <Metadata type="TraceLab.Core.Components.EndNodeMetadata, TraceLab.Core, Culture=neutral, PublicKeyToken=2c83cea59a8bb151" Label="End" WaitsForAllPredecessors="True" />
+        </SerializedVertexData>
+      </node>
+      <edge id="3c463706-97f3-4186-8978-bc9a36f03bd0" source="6361a9f7-9884-46df-9e1c-cdc8ea1e73b7" target="End" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="d955ed6d-c9bd-41d1-892d-4bbc156409f7" source="009093d7-bb10-4141-890e-a804791d808f" target="End" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="7dd424a8-8e63-4a3d-8627-bf8a0052e422" source="2e3245a9-641d-4881-81b2-a939ac16dfb0" target="End" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="bc8fc1b0-e56c-4dcd-b8d7-eca583614921" source="90e18072-e6f2-4b81-834d-21505ddb2d3d" target="End" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="149a93b2-04c5-4746-a0c3-bca10996e067" source="8e8b2e81-0ec8-4477-9c58-04d653d2655f" target="End" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="35465dea-f558-4d1a-a31d-57595df0339b" source="379859ff-2599-439b-bb82-2e6987b99a28" target="End" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="9aff93bf-f09a-4fb7-8902-165b038ec189" source="01975588-0a51-41c8-976e-6c25710b9394" target="End" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="cedac498-f5c9-459a-a246-1d9f47ee71d9" source="e3383c64-ee31-482e-b251-b9c7abbbbb85" target="End" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="2fdee7b2-feaa-44f4-8809-7f08bf3ab6ce" source="6c80f030-36b0-4a6a-8fd3-1b4714a6435a" target="End" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="9e4d2d59-d274-4b30-99a2-ad51b0c7b8a3" source="Start" target="6361a9f7-9884-46df-9e1c-cdc8ea1e73b7" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="fe181341-e79c-4cf8-aad4-87ecc070e8cc" source="Start" target="009093d7-bb10-4141-890e-a804791d808f" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="aba759a6-fec7-46a6-b253-5a6a8c93a786" source="Start" target="2e3245a9-641d-4881-81b2-a939ac16dfb0" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="ae00d4e7-4e9b-42ee-9a32-a11a383cfd5c" source="Start" target="90e18072-e6f2-4b81-834d-21505ddb2d3d" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="fc9981e7-bd03-4e0f-89af-a375cb141d82" source="Start" target="8e8b2e81-0ec8-4477-9c58-04d653d2655f" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="c06bcc12-8945-4ce6-87c2-77347a5ca710" source="Start" target="379859ff-2599-439b-bb82-2e6987b99a28" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="849308cf-7b1c-44f8-bff2-9de5e35577e8" source="Start" target="01975588-0a51-41c8-976e-6c25710b9394" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="b204de7a-4dc7-427c-89cb-122e1176dbd0" source="Start" target="e3383c64-ee31-482e-b251-b9c7abbbbb85" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+      <edge id="eb3b5db2-b461-469d-8ca5-255f300335e0" source="Start" target="6c80f030-36b0-4a6a-8fd3-1b4714a6435a" isFixed="False" isVisible="True">
+        <RoutePointsCollection />
+      </edge>
+    </graph>
+  </ComponentGraph>
+</CompositeComponentMetadataDefinition>
